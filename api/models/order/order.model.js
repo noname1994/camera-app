@@ -12,7 +12,14 @@ module.exports = (sequelize, DataTypes) => {
             },
             status: {
                 type: DataTypes.ENUM,
-                values: ["STATUS1", "STATUS2"]
+                values: ["NEW","CONFIRMED","TRANSFER","SUCCESS","FAILURE","CANCEL"]
+            },
+            code: {
+                type: DataTypes.STRING
+            },
+            payment_type:{
+                type: DataTypes.ENUM,
+                values: ["TRANSFER_MONEY"]
             }
         },
         {

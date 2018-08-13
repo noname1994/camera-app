@@ -155,17 +155,17 @@ module.exports = {
         Joi.object().keys(
           {
             id: Joi.number().required(),
-            id_video: Joi.string(),
-            url: Joi.string(),
-            hosted_by: Joi.string(),
-            title: Joi.string(),
-            description: Joi.string(),
-            started_at: Joi.string(),
-            ended_at: Joi.string(),
-            embedded_link: Joi.string(),
-            created_type: Joi.string(),
-            created_at: Joi.date(),
-            updated_at: Joi.date()
+            // id_video: Joi.string(),
+            // url: Joi.string(),
+            // hosted_by: Joi.string(),
+            // title: Joi.string(),
+            // description: Joi.string(),
+            // started_at: Joi.string(),
+            // ended_at: Joi.string(),
+            // embedded_link: Joi.string(),
+            // created_type: Joi.string(),
+            // created_at: Joi.date(),
+            // updated_at: Joi.date()
           }
         )
       ),
@@ -254,6 +254,52 @@ module.exports = {
   },
 
   deleteVideo: {
+    query: {
+      arrId: Joi.array().required()
+    }
+  },
+
+  // order
+  createOrder: {
+    body: {
+      total: Joi.number(),
+      status: Joi.string().valid("NEW","CONFIRMED","TRANSFER","SUCCESS","FAILURE","CANCEL"),
+      code: Joi.string(),
+      payment_type: Joi.string().valid("TRANSFER_MONEY"),
+      user_id: Joi.number().required(),
+      product_id: Joi.number().required()
+    }
+  },
+
+  updateOrder: {
+    body: {
+      id: Joi.string().required(),
+      // total: Joi.string(),
+      status: Joi.string().valid("NEW","CONFIRMED","TRANSFER","SUCCESS","FAILURE","CANCEL"),
+      // code: Joi.string(),
+      // payment_type: Joi.string().valid("TRANSFER_MONEY"),
+      // user_id: Joi.number().required(),
+      // product_id: Joi.number().required()
+    }
+  },
+
+  findAllOrder: {
+    query: {
+      code: Joi.string(),
+      pageNum: Joi.number().min(0),
+      pageSize: Joi.number().min(1)
+    }
+  },
+
+  findAllOrderForDataTable: {
+    query: {
+      draw: Joi.number(),
+      start: Joi.number().min(0),
+      length: Joi.number().min(1)
+    }
+  },
+
+  deleteOrder: {
     query: {
       arrId: Joi.array().required()
     }

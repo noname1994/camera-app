@@ -44,6 +44,7 @@ app.use(express.static(path.join(__dirname, "public")));
 //routes
 const cameraRouter = require("./routes/camera.router");
 const videoRouter = require("./routes/video.router");
+const orderRouter = require("./routes/order.router");
 const userRouter = require("./routes/user.router");
 const fileRouter = require("./routes/file.router");
 const productRouter = require("./routes/product.router");
@@ -52,6 +53,8 @@ app.use(userRouter);
 app.use(fileRouter);
 app.use(productRouter);
 app.use(videoRouter);
+app.use(orderRouter);
+
 // app.use("/", index);
 
 // catch 404 and forward to error handler
