@@ -1,0 +1,37 @@
+2018-06-19T14:40:42.634Z - info: ::1 - - [19/Jun/2018:14:40:42 +0000] "PUT /admin/product/update HTTP/1.1" 200 246 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:41:58.674Z - info: ::1 - - [19/Jun/2018:14:41:58 +0000] "PUT /admin/product/update HTTP/1.1" 200 246 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:41:59.237Z - info: ::1 - - [19/Jun/2018:14:41:59 +0000] "PUT /admin/product/update HTTP/1.1" 200 246 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:43:10.200Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-19T14:43:10.202Z - info: ::1 - - [19/Jun/2018:14:43:10 +0000] "PUT /admin/product/update HTTP/1.1" 400 399 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:43:10.204Z - info: ::1 - - [19/Jun/2018:14:43:10 +0000] "PUT /admin/product/update HTTP/1.1" 200 246 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:43:24.727Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-19T14:43:24.729Z - info: ::1 - - [19/Jun/2018:14:43:24 +0000] "PUT /admin/product/update HTTP/1.1" 400 399 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:43:25.799Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-19T14:43:25.800Z - info: ::1 - - [19/Jun/2018:14:43:25 +0000] "PUT /admin/product/update HTTP/1.1" 400 399 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:43:40.242Z - info: ::1 - - [19/Jun/2018:14:43:40 +0000] "PUT /admin/product/update HTTP/1.1" 200 246 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:44:13.380Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-19T14:44:13.383Z - info: ::1 - - [19/Jun/2018:14:44:13 +0000] "PUT /admin/product/update HTTP/1.1" 400 399 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:44:37.543Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-19T14:44:37.545Z - info: ::1 - - [19/Jun/2018:14:44:37 +0000] "PUT /admin/product/update HTTP/1.1" 400 228 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:45:01.090Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-19T14:45:01.091Z - info: ::1 - - [19/Jun/2018:14:45:01 +0000] "PUT /admin/product/update HTTP/1.1" 400 120 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:45:15.159Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-19T14:45:15.161Z - info: ::1 - - [19/Jun/2018:14:45:15 +0000] "PUT /admin/product/update HTTP/1.1" 400 53 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:45:25.547Z - info: ::1 - - [19/Jun/2018:14:45:25 +0000] "PUT /admin/product/update HTTP/1.1" 200 246 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:50:19.519Z - info: ::1 - - [19/Jun/2018:14:50:19 +0000] "PUT /admin/product/update HTTP/1.1" - - "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-19T14:50:46.159Z - info: ::1 - - [19/Jun/2018:14:50:46 +0000] "PUT /admin/product/update HTTP/1.1" 200 246 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+

@@ -1,0 +1,6 @@
+2018-05-14T17:17:33.707Z - info: ::1 - - [14/May/2018:17:17:33 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-14T17:17:51.478Z - info: ::1 - - [14/May/2018:17:17:51 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-14T17:18:18.245Z - info: ::ffff:127.0.0.1 - - [14/May/2018:17:18:18 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+

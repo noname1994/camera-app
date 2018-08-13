@@ -1,0 +1,20 @@
+{
+  "camera": [
+    {
+      "name": "camera1",
+      "uri": "rtsp://localhost:8554/1",
+      "namespace": "/cam0",
+      "resolution": "320x240",
+      "quality": 3,
+      "fileOutput": "camera%05d.mp4"
+    },
+    {
+      "name": "camera2",
+      "uri": "rtsp://localhost:8555/2",
+      "namespace": "/cam1",
+      "resolution": "320x240",
+      "quality": 3,
+      "fileOutput": "camera%05d.mp4"
+    }
+  ]
+}

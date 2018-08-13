@@ -1,0 +1,37 @@
+2018-05-14T16:31:22.467Z - info: ::1 - - [14/May/2018:16:31:22 +0000] "GET / HTTP/1.1" 200 3666 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-14T16:31:22.847Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:111:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /favicon.ico - GET - ::1
+2018-05-14T16:31:22.850Z - info: ::1 - - [14/May/2018:16:31:22 +0000] "GET /favicon.ico HTTP/1.1" 404 24 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-14T16:32:32.957Z - info: ::1 - - [14/May/2018:16:32:32 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-14T16:37:51.781Z - info: ::1 - - [14/May/2018:16:37:51 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-14T16:38:33.185Z - info: ::1 - - [14/May/2018:16:38:33 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-14T16:38:44.185Z - info: ::1 - - [14/May/2018:16:38:44 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-14T16:38:47.775Z - info: ::1 - - [14/May/2018:16:38:47 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+

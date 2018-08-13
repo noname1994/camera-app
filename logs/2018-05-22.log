@@ -1,0 +1,1036 @@
+2018-05-22T15:32:45.111Z - info: ::1 - - [22/May/2018:15:32:45 +0000] "GET /dist HTTP/1.1" 301 167 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:32:45.116Z - info: ::1 - - [22/May/2018:15:32:45 +0000] "GET /dist/ HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:32:45.201Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /styles.1b485c984366b5499da2.bundle.css - GET - ::1
+2018-05-22T15:32:45.203Z - info: ::1 - - [22/May/2018:15:32:45 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:32:45.206Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /inline.318b50c57b4eba3d437b.bundle.js - GET - ::1
+2018-05-22T15:32:45.207Z - info: ::1 - - [22/May/2018:15:32:45 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:32:45.210Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /polyfills.9e2eb304be641132ecfe.bundle.js - GET - ::1
+2018-05-22T15:32:45.211Z - info: ::1 - - [22/May/2018:15:32:45 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:32:45.215Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /scripts.e2cc764d74d6cb8d1c42.bundle.js - GET - ::1
+2018-05-22T15:32:45.216Z - info: ::1 - - [22/May/2018:15:32:45 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:32:45.218Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /main.a0f1bb6d12daa7df93cb.bundle.js - GET - ::1
+2018-05-22T15:32:45.220Z - info: ::1 - - [22/May/2018:15:32:45 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:33:02.573Z - info: ::1 - - [22/May/2018:15:33:02 +0000] "GET /dist/index.html HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:33:02.589Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /styles.1b485c984366b5499da2.bundle.css - GET - ::1
+2018-05-22T15:33:02.591Z - info: ::1 - - [22/May/2018:15:33:02 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 404 24 "http://localhost:8080/dist/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:33:02.593Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /inline.318b50c57b4eba3d437b.bundle.js - GET - ::1
+2018-05-22T15:33:02.595Z - info: ::1 - - [22/May/2018:15:33:02 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:33:02.596Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /polyfills.9e2eb304be641132ecfe.bundle.js - GET - ::1
+2018-05-22T15:33:02.598Z - info: ::1 - - [22/May/2018:15:33:02 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:33:02.600Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /scripts.e2cc764d74d6cb8d1c42.bundle.js - GET - ::1
+2018-05-22T15:33:02.602Z - info: ::1 - - [22/May/2018:15:33:02 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:33:02.604Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /main.a0f1bb6d12daa7df93cb.bundle.js - GET - ::1
+2018-05-22T15:33:02.605Z - info: ::1 - - [22/May/2018:15:33:02 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:34:49.267Z - info: ::1 - - [22/May/2018:15:34:49 +0000] "GET / HTTP/1.1" 200 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:35:00.392Z - info: ::1 - - [22/May/2018:15:35:00 +0000] "GET /dist/ HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:35:00.420Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /styles.1b485c984366b5499da2.bundle.css - GET - ::1
+2018-05-22T15:35:00.423Z - info: ::1 - - [22/May/2018:15:35:00 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:35:00.425Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /inline.318b50c57b4eba3d437b.bundle.js - GET - ::1
+2018-05-22T15:35:00.426Z - info: ::1 - - [22/May/2018:15:35:00 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:35:00.431Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /polyfills.9e2eb304be641132ecfe.bundle.js - GET - ::1
+2018-05-22T15:35:00.432Z - info: ::1 - - [22/May/2018:15:35:00 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:35:00.434Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /scripts.e2cc764d74d6cb8d1c42.bundle.js - GET - ::1
+2018-05-22T15:35:00.435Z - info: ::1 - - [22/May/2018:15:35:00 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:35:00.437Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /main.a0f1bb6d12daa7df93cb.bundle.js - GET - ::1
+2018-05-22T15:35:00.438Z - info: ::1 - - [22/May/2018:15:35:00 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/dist/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:05.825Z - info: ::1 - - [22/May/2018:15:36:05 +0000] "GET /camera HTTP/1.1" 301 171 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:05.832Z - info: ::1 - - [22/May/2018:15:36:05 +0000] "GET /camera/ HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:05.847Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /styles.1b485c984366b5499da2.bundle.css - GET - ::1
+2018-05-22T15:36:05.849Z - info: ::1 - - [22/May/2018:15:36:05 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 404 24 "http://localhost:8080/camera/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:05.851Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /inline.318b50c57b4eba3d437b.bundle.js - GET - ::1
+2018-05-22T15:36:05.852Z - info: ::1 - - [22/May/2018:15:36:05 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/camera/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:05.854Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /polyfills.9e2eb304be641132ecfe.bundle.js - GET - ::1
+2018-05-22T15:36:05.855Z - info: ::1 - - [22/May/2018:15:36:05 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/camera/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:05.857Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /scripts.e2cc764d74d6cb8d1c42.bundle.js - GET - ::1
+2018-05-22T15:36:05.858Z - info: ::1 - - [22/May/2018:15:36:05 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/camera/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:05.859Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /main.a0f1bb6d12daa7df93cb.bundle.js - GET - ::1
+2018-05-22T15:36:05.860Z - info: ::1 - - [22/May/2018:15:36:05 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/camera/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:31.512Z - info: ::1 - - [22/May/2018:15:36:31 +0000] "GET / HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:31.529Z - info: ::1 - - [22/May/2018:15:36:31 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 200 796 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:31.534Z - info: ::1 - - [22/May/2018:15:36:31 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 200 59684 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:31.537Z - info: ::1 - - [22/May/2018:15:36:31 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 200 123030 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:31.542Z - info: ::1 - - [22/May/2018:15:36:31 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 200 514714 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:31.545Z - info: ::1 - - [22/May/2018:15:36:31 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 200 127721 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:36:32.987Z - info: ::1 - - [22/May/2018:15:36:32 +0000] "GET /assets/video-camera.png HTTP/1.1" 200 1240 "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:37:29.464Z - info: ::1 - - [22/May/2018:15:37:29 +0000] "GET /ninh/camera.html HTTP/1.1" 200 18 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:37:49.983Z - info: ::1 - - [22/May/2018:15:37:49 +0000] "GET /real-time/camera.html HTTP/1.1" 200 18 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:00.990Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /real-time/camera.html - GET - ::1
+2018-05-22T15:38:00.998Z - info: ::1 - - [22/May/2018:15:38:00 +0000] "GET /real-time/camera.html HTTP/1.1" 404 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:13.833Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /real-time/camera.html - GET - ::1
+2018-05-22T15:38:13.841Z - info: ::1 - - [22/May/2018:15:38:13 +0000] "GET /real-time/camera.html HTTP/1.1" 404 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:23.572Z - info: ::1 - - [22/May/2018:15:38:23 +0000] "GET /real-time HTTP/1.1" 301 177 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:23.580Z - info: ::1 - - [22/May/2018:15:38:23 +0000] "GET /real-time/ HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:23.597Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /styles.1b485c984366b5499da2.bundle.css - GET - ::1
+2018-05-22T15:38:23.599Z - info: ::1 - - [22/May/2018:15:38:23 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 404 24 "http://localhost:8080/real-time/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:23.601Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /inline.318b50c57b4eba3d437b.bundle.js - GET - ::1
+2018-05-22T15:38:23.603Z - info: ::1 - - [22/May/2018:15:38:23 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:23.606Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /polyfills.9e2eb304be641132ecfe.bundle.js - GET - ::1
+2018-05-22T15:38:23.608Z - info: ::1 - - [22/May/2018:15:38:23 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:23.611Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /scripts.e2cc764d74d6cb8d1c42.bundle.js - GET - ::1
+2018-05-22T15:38:23.612Z - info: ::1 - - [22/May/2018:15:38:23 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:23.615Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /main.a0f1bb6d12daa7df93cb.bundle.js - GET - ::1
+2018-05-22T15:38:23.617Z - info: ::1 - - [22/May/2018:15:38:23 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:28.750Z - info: ::1 - - [22/May/2018:15:38:28 +0000] "GET /real-time/index.html HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:28.772Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /styles.1b485c984366b5499da2.bundle.css - GET - ::1
+2018-05-22T15:38:28.773Z - info: ::1 - - [22/May/2018:15:38:28 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:28.777Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /inline.318b50c57b4eba3d437b.bundle.js - GET - ::1
+2018-05-22T15:38:28.779Z - info: ::1 - - [22/May/2018:15:38:28 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:28.780Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /polyfills.9e2eb304be641132ecfe.bundle.js - GET - ::1
+2018-05-22T15:38:28.781Z - info: ::1 - - [22/May/2018:15:38:28 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:28.783Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /scripts.e2cc764d74d6cb8d1c42.bundle.js - GET - ::1
+2018-05-22T15:38:28.784Z - info: ::1 - - [22/May/2018:15:38:28 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:28.785Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /main.a0f1bb6d12daa7df93cb.bundle.js - GET - ::1
+2018-05-22T15:38:28.786Z - info: ::1 - - [22/May/2018:15:38:28 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:54.067Z - info: ::1 - - [22/May/2018:15:38:54 +0000] "GET /real-time/index.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:54.086Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /styles.1b485c984366b5499da2.bundle.css - GET - ::1
+2018-05-22T15:38:54.087Z - info: ::1 - - [22/May/2018:15:38:54 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:54.092Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /inline.318b50c57b4eba3d437b.bundle.js - GET - ::1
+2018-05-22T15:38:54.093Z - info: ::1 - - [22/May/2018:15:38:54 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:54.095Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /polyfills.9e2eb304be641132ecfe.bundle.js - GET - ::1
+2018-05-22T15:38:54.097Z - info: ::1 - - [22/May/2018:15:38:54 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:54.099Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /scripts.e2cc764d74d6cb8d1c42.bundle.js - GET - ::1
+2018-05-22T15:38:54.100Z - info: ::1 - - [22/May/2018:15:38:54 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:38:54.101Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /main.a0f1bb6d12daa7df93cb.bundle.js - GET - ::1
+2018-05-22T15:38:54.103Z - info: ::1 - - [22/May/2018:15:38:54 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 404 24 "http://localhost:8080/real-time/index.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:39:40.793Z - info: ::1 - - [22/May/2018:15:39:40 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:39:40.814Z - info: ::1 - - [22/May/2018:15:39:40 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 200 796 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:39:40.816Z - info: ::1 - - [22/May/2018:15:39:40 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 200 127721 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:39:40.818Z - info: ::1 - - [22/May/2018:15:39:40 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 200 59684 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:39:40.820Z - info: ::1 - - [22/May/2018:15:39:40 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 200 123030 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:39:40.824Z - info: ::1 - - [22/May/2018:15:39:40 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 200 514714 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:39:42.138Z - info: ::1 - - [22/May/2018:15:39:42 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:11.673Z - info: ::1 - - [22/May/2018:15:40:11 +0000] "GET / HTTP/1.1" 200 3666 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:20.643Z - info: ::1 - - [22/May/2018:15:40:20 +0000] "GET /camera.html HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:20.665Z - info: ::1 - - [22/May/2018:15:40:20 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:20.668Z - info: ::1 - - [22/May/2018:15:40:20 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:20.669Z - info: ::1 - - [22/May/2018:15:40:20 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:20.670Z - info: ::1 - - [22/May/2018:15:40:20 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:20.673Z - info: ::1 - - [22/May/2018:15:40:20 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:25.421Z - info: ::1 - - [22/May/2018:15:40:25 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:28.723Z - info: ::1 - - [22/May/2018:15:40:28 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:52.886Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- / - GET - ::ffff:127.0.0.1
+2018-05-22T15:40:52.891Z - info: ::ffff:127.0.0.1 - - [22/May/2018:15:40:52 +0000] "GET / HTTP/1.1" 404 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:59.790Z - info: ::1 - - [22/May/2018:15:40:59 +0000] "GET /camera.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:59.804Z - info: ::1 - - [22/May/2018:15:40:59 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:59.805Z - info: ::1 - - [22/May/2018:15:40:59 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:59.807Z - info: ::1 - - [22/May/2018:15:40:59 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:59.808Z - info: ::1 - - [22/May/2018:15:40:59 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:40:59.809Z - info: ::1 - - [22/May/2018:15:40:59 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/camera.html" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-22T15:41:01.244Z - info: ::1 - - [22/May/2018:15:41:01 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+

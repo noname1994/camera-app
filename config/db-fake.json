@@ -1,0 +1,42 @@
+{
+    "camera": [
+        {
+            "name": "camera1",
+            "uri": "rtsp://localhost:8554/1",
+            "namespace": "/cam0",
+            "resolution": "320x240",
+            "quality": 3,
+            "fileOutput": "camera%05d.mp4"
+        },
+        {
+            "name": "camera2",
+            "uri": "rtsp://localhost:8555/2",
+            "namespace": "/cam1",
+            "resolution": "320x240",
+            "quality": 3,
+            "fileOutput": "camera%05d.mp4"
+        },
+        {
+            "name": "camera3",
+            "uri": "rtsp://localhost:8555/3",   
+            "namespace": "/cam2",
+            "resolution": "320x240",
+            "quality": 3,
+            "fileOutput": "camera%05d.mp4"
+        }
+    ],
+    "roles": [
+        {
+            "name": "ADMIN"
+        }
+    ],
+    "users": [
+        {
+            "email": "tranducninhnd94@hotmail.com",
+            "password": "1234",
+            "fullname": "Tran Duc Ninh",
+            "phone_number": "01669709094",
+            "address": "Nam Dinh"
+        }
+    ]
+}

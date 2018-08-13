@@ -1,0 +1,514 @@
+2018-05-29T15:05:05.196Z - info: ::1 - - [29/May/2018:15:05:05 +0000] "GET / HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:05.306Z - info: ::1 - - [29/May/2018:15:05:05 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:05.307Z - info: ::1 - - [29/May/2018:15:05:05 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:05.308Z - info: ::1 - - [29/May/2018:15:05:05 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:05.311Z - info: ::1 - - [29/May/2018:15:05:05 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:05.313Z - info: ::1 - - [29/May/2018:15:05:05 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:06.807Z - info: ::1 - - [29/May/2018:15:05:06 +0000] "GET /assets/video-camera.png HTTP/1.1" 200 1240 "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:35.249Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /camera/all - GET - ::1
+2018-05-29T15:05:35.253Z - info: ::1 - - [29/May/2018:15:05:35 +0000] "GET /camera/all HTTP/1.1" 404 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:38.840Z - info: ::1 - - [29/May/2018:15:05:38 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:38.853Z - info: ::1 - - [29/May/2018:15:05:38 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:38.855Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:05:38 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:38.858Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:05:38 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:38.859Z - info: ::1 - - [29/May/2018:15:05:38 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:38.861Z - info: ::1 - - [29/May/2018:15:05:38 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:39.753Z - info: ::1 - - [29/May/2018:15:05:39 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:05:56.464Z - info: ::1 - - [29/May/2018:15:05:56 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:07:37.614Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:07:37 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:07:37.630Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:07:37 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:07:37.632Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:07:37 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:07:37.634Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:07:37 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:07:37.635Z - info: ::1 - - [29/May/2018:15:07:37 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:07:37.636Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:07:37 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:07:39.791Z - info: ::1 - - [29/May/2018:15:07:39 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:08:16.070Z - info: ::1 - - [29/May/2018:15:08:16 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:08:16.090Z - info: ::1 - - [29/May/2018:15:08:16 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:08:16.096Z - info: ::1 - - [29/May/2018:15:08:16 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:08:16.099Z - info: ::1 - - [29/May/2018:15:08:16 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:08:16.100Z - info: ::1 - - [29/May/2018:15:08:16 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:08:16.102Z - info: ::1 - - [29/May/2018:15:08:16 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:08:18.353Z - info: ::1 - - [29/May/2018:15:08:18 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:03.195Z - info: ::1 - - [29/May/2018:15:09:03 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:03.236Z - info: ::1 - - [29/May/2018:15:09:03 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:03.242Z - info: ::1 - - [29/May/2018:15:09:03 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:03.260Z - info: ::1 - - [29/May/2018:15:09:03 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:03.263Z - info: ::1 - - [29/May/2018:15:09:03 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:03.265Z - info: ::1 - - [29/May/2018:15:09:03 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:04.872Z - info: ::1 - - [29/May/2018:15:09:04 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:35.392Z - info: ::1 - - [29/May/2018:15:09:35 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:35.414Z - info: ::1 - - [29/May/2018:15:09:35 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:35.416Z - info: ::1 - - [29/May/2018:15:09:35 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:35.417Z - info: ::1 - - [29/May/2018:15:09:35 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:35.421Z - info: ::1 - - [29/May/2018:15:09:35 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:35.422Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:09:35 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:09:36.789Z - info: ::1 - - [29/May/2018:15:09:36 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:11:49.209Z - info: ::1 - - [29/May/2018:15:11:49 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:11:49.255Z - info: ::1 - - [29/May/2018:15:11:49 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:11:49.257Z - info: ::1 - - [29/May/2018:15:11:49 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:11:49.260Z - info: ::1 - - [29/May/2018:15:11:49 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:11:49.263Z - info: ::1 - - [29/May/2018:15:11:49 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:11:49.264Z - info: ::1 - - [29/May/2018:15:11:49 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:11:50.808Z - info: ::1 - - [29/May/2018:15:11:50 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:12:16.670Z - info: ::1 - - [29/May/2018:15:12:16 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:12:16.695Z - info: ::1 - - [29/May/2018:15:12:16 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:12:16.699Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:12:16 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:12:16.707Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:12:16 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:12:16.708Z - info: ::1 - - [29/May/2018:15:12:16 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:12:16.709Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:12:16 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:12:18.040Z - info: ::1 - - [29/May/2018:15:12:18 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:44.244Z - info: ::1 - - [29/May/2018:15:20:44 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:44.259Z - info: ::1 - - [29/May/2018:15:20:44 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:44.262Z - info: ::1 - - [29/May/2018:15:20:44 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:44.264Z - info: ::1 - - [29/May/2018:15:20:44 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:44.265Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:20:44 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:44.273Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:20:44 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:45.574Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:20:45 +0000] "GET / HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:45.619Z - info: ::1 - - [29/May/2018:15:20:45 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 200 796 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:45.628Z - info: ::1 - - [29/May/2018:15:20:45 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 200 59684 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:45.633Z - info: ::1 - - [29/May/2018:15:20:45 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 200 123030 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:45.636Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:20:45 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 200 514714 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:45.639Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:20:45 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 200 127721 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:20:48.921Z - info: ::1 - - [29/May/2018:15:20:48 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:21:32.504Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /cam0 - GET - ::1
+2018-05-29T15:21:32.508Z - info: ::1 - - [29/May/2018:15:21:32 +0000] "GET /cam0 HTTP/1.1" 404 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:21:36.535Z - info: ::1 - - [29/May/2018:15:21:36 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:21:36.551Z - info: ::1 - - [29/May/2018:15:21:36 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:21:36.553Z - info: ::1 - - [29/May/2018:15:21:36 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:21:36.556Z - info: ::1 - - [29/May/2018:15:21:36 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:21:36.557Z - info: ::1 - - [29/May/2018:15:21:36 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:21:36.560Z - info: ::1 - - [29/May/2018:15:21:36 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:21:37.581Z - info: ::1 - - [29/May/2018:15:21:37 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:22:37.374Z - info: ::1 - - [29/May/2018:15:22:37 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:22:37.413Z - info: ::1 - - [29/May/2018:15:22:37 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:22:37.417Z - info: ::1 - - [29/May/2018:15:22:37 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:22:37.419Z - info: ::1 - - [29/May/2018:15:22:37 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:22:37.421Z - info: ::1 - - [29/May/2018:15:22:37 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:22:37.423Z - info: ::1 - - [29/May/2018:15:22:37 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:22:38.808Z - info: ::1 - - [29/May/2018:15:22:38 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:23:35.302Z - info: ::1 - - [29/May/2018:15:23:35 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:23:37.053Z - info: ::1 - - [29/May/2018:15:23:37 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:23:37.071Z - info: ::1 - - [29/May/2018:15:23:37 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:23:37.071Z - info: ::1 - - [29/May/2018:15:23:37 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:23:37.073Z - info: ::1 - - [29/May/2018:15:23:37 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:23:37.074Z - info: ::1 - - [29/May/2018:15:23:37 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:23:37.076Z - info: ::1 - - [29/May/2018:15:23:37 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:23:38.643Z - info: ::1 - - [29/May/2018:15:23:38 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:07.786Z - info: ::1 - - [29/May/2018:15:24:07 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:07.812Z - info: ::1 - - [29/May/2018:15:24:07 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:07.813Z - info: ::1 - - [29/May/2018:15:24:07 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:07.814Z - info: ::1 - - [29/May/2018:15:24:07 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:07.816Z - info: ::1 - - [29/May/2018:15:24:07 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:07.817Z - info: ::1 - - [29/May/2018:15:24:07 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:08.651Z - info: ::1 - - [29/May/2018:15:24:08 +0000] "GET / HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:08.683Z - info: ::1 - - [29/May/2018:15:24:08 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 200 796 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:08.687Z - info: ::1 - - [29/May/2018:15:24:08 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 200 127721 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:08.690Z - info: ::1 - - [29/May/2018:15:24:08 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 200 59684 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:08.692Z - info: ::1 - - [29/May/2018:15:24:08 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 200 123030 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:08.695Z - info: ::1 - - [29/May/2018:15:24:08 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 200 514714 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:08.916Z - info: ::1 - - [29/May/2018:15:24:08 +0000] "GET /favicon.ico HTTP/1.1" 200 5430 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:10.355Z - info: ::1 - - [29/May/2018:15:24:10 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:24:59.333Z - info: ::1 - - [29/May/2018:15:24:59 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:25:12.898Z - info: ::1 - - [29/May/2018:15:25:12 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:25:12.916Z - info: ::1 - - [29/May/2018:15:25:12 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:25:12.921Z - info: ::1 - - [29/May/2018:15:25:12 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:25:12.924Z - info: ::1 - - [29/May/2018:15:25:12 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:25:12.927Z - info: ::1 - - [29/May/2018:15:25:12 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:25:12.928Z - info: ::1 - - [29/May/2018:15:25:12 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:25:14.593Z - info: ::1 - - [29/May/2018:15:25:14 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:26:29.617Z - info: ::1 - - [29/May/2018:15:26:29 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:26:29.648Z - info: ::1 - - [29/May/2018:15:26:29 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:26:29.653Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:26:29 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:26:29.661Z - info: ::1 - - [29/May/2018:15:26:29 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:26:29.662Z - info: ::1 - - [29/May/2018:15:26:29 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:26:29.666Z - info: ::1 - - [29/May/2018:15:26:29 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:26:31.289Z - info: ::1 - - [29/May/2018:15:26:31 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:27:40.129Z - info: ::1 - - [29/May/2018:15:27:40 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:27:40.160Z - info: ::1 - - [29/May/2018:15:27:40 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:27:40.162Z - info: ::1 - - [29/May/2018:15:27:40 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:27:40.163Z - info: ::1 - - [29/May/2018:15:27:40 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:27:40.164Z - info: ::1 - - [29/May/2018:15:27:40 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:27:40.165Z - info: ::1 - - [29/May/2018:15:27:40 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:27:41.903Z - info: ::1 - - [29/May/2018:15:27:41 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:30:15.935Z - info: ::1 - - [29/May/2018:15:30:15 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:30:16.008Z - info: ::1 - - [29/May/2018:15:30:16 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:30:16.009Z - info: ::1 - - [29/May/2018:15:30:16 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:30:16.011Z - info: ::1 - - [29/May/2018:15:30:16 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:30:16.013Z - info: ::1 - - [29/May/2018:15:30:16 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:30:16.014Z - info: ::1 - - [29/May/2018:15:30:16 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:30:17.547Z - info: ::1 - - [29/May/2018:15:30:17 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:33:55.320Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:33:55 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:33:55.341Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:33:55 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:33:55.343Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:33:55 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:33:55.344Z - info: ::1 - - [29/May/2018:15:33:55 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:33:55.345Z - info: ::1 - - [29/May/2018:15:33:55 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:33:55.348Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:33:55 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:33:56.646Z - info: ::1 - - [29/May/2018:15:33:56 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:34:01.019Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:34:01 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:34:28.133Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:34:28 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:34:28.154Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:34:28 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:34:28.158Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:34:28 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:34:28.160Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:34:28 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:34:28.162Z - info: ::1 - - [29/May/2018:15:34:28 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:34:28.163Z - info: ::1 - - [29/May/2018:15:34:28 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:34:29.969Z - info: ::1 - - [29/May/2018:15:34:29 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:35:09.530Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:35:09 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:35:09.554Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:35:09 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:35:09.556Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:35:09 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:35:09.557Z - info: ::1 - - [29/May/2018:15:35:09 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:35:09.567Z - info: ::1 - - [29/May/2018:15:35:09 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:35:09.569Z - info: ::1 - - [29/May/2018:15:35:09 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:35:11.141Z - info: ::1 - - [29/May/2018:15:35:11 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:01.257Z - info: ::1 - - [29/May/2018:15:36:01 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:01.289Z - info: ::1 - - [29/May/2018:15:36:01 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:01.296Z - info: ::1 - - [29/May/2018:15:36:01 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:01.301Z - info: ::1 - - [29/May/2018:15:36:01 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:01.305Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:36:01 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:01.306Z - info: ::1 - - [29/May/2018:15:36:01 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:02.978Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:36:02 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:51.114Z - info: ::1 - - [29/May/2018:15:36:51 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:51.138Z - info: ::1 - - [29/May/2018:15:36:51 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:51.139Z - info: ::1 - - [29/May/2018:15:36:51 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:51.141Z - info: ::1 - - [29/May/2018:15:36:51 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:51.143Z - info: ::1 - - [29/May/2018:15:36:51 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:51.146Z - info: ::1 - - [29/May/2018:15:36:51 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:36:52.664Z - info: ::1 - - [29/May/2018:15:36:52 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.647Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.662Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.672Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.677Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.682Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.688Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.746Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.747Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.749Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:43.751Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:43 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:37:45.476Z - info: ::ffff:127.0.0.1 - - [29/May/2018:15:37:45 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.101Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.178Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.181Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.184Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.188Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.193Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.338Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.351Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.353Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:05.354Z - info: ::1 - - [29/May/2018:15:39:05 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:07.884Z - info: ::1 - - [29/May/2018:15:39:07 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.397Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.496Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.500Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.503Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.507Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.513Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.666Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.672Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.674Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:39:59.675Z - info: ::1 - - [29/May/2018:15:39:59 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:40:00.783Z - info: ::1 - - [29/May/2018:15:40:00 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:51:50.398Z - info: ::1 - - [29/May/2018:15:51:50 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:51:54.531Z - info: ::1 - - [29/May/2018:15:51:54 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:51:54.571Z - info: ::1 - - [29/May/2018:15:51:54 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:51:54.573Z - info: ::1 - - [29/May/2018:15:51:54 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:51:54.575Z - info: ::1 - - [29/May/2018:15:51:54 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:51:54.577Z - info: ::1 - - [29/May/2018:15:51:54 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:51:54.580Z - info: ::1 - - [29/May/2018:15:51:54 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:53:22.989Z - info: ::1 - - [29/May/2018:15:53:22 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:53:23.235Z - info: ::1 - - [29/May/2018:15:53:23 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:53:23.237Z - info: ::1 - - [29/May/2018:15:53:23 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:53:23.238Z - info: ::1 - - [29/May/2018:15:53:23 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:53:23.239Z - info: ::1 - - [29/May/2018:15:53:23 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:53:23.240Z - info: ::1 - - [29/May/2018:15:53:23 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:53:25.507Z - info: ::1 - - [29/May/2018:15:53:25 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:59:15.372Z - info: ::1 - - [29/May/2018:15:59:15 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:59:15.591Z - info: ::1 - - [29/May/2018:15:59:15 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:59:15.597Z - info: ::1 - - [29/May/2018:15:59:15 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:59:15.599Z - info: ::1 - - [29/May/2018:15:59:15 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:59:15.601Z - info: ::1 - - [29/May/2018:15:59:15 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:59:15.602Z - info: ::1 - - [29/May/2018:15:59:15 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T15:59:18.236Z - info: ::1 - - [29/May/2018:15:59:18 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T16:14:14.477Z - info: ::1 - - [29/May/2018:16:14:14 +0000] "GET / HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T16:14:14.579Z - info: ::1 - - [29/May/2018:16:14:14 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T16:14:14.582Z - info: ::1 - - [29/May/2018:16:14:14 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T16:14:14.583Z - info: ::1 - - [29/May/2018:16:14:14 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T16:14:14.586Z - info: ::1 - - [29/May/2018:16:14:14 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T16:14:14.587Z - info: ::1 - - [29/May/2018:16:14:14 +0000] "GET /main.a0f1bb6d12daa7df93cb.bundle.js HTTP/1.1" 304 - "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-29T16:14:17.018Z - info: ::1 - - [29/May/2018:16:14:17 +0000] "GET /assets/video-camera.png HTTP/1.1" 304 - "http://localhost:8080/camera/all" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+

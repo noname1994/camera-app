@@ -1,0 +1,125 @@
+2018-05-19T14:39:25.793Z - error: 500 - Data truncated for column 'status' at row 1 -SequelizeDatabaseError: Data truncated for column 'status' at row 1
+    at Query.formatError (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:89:29)
+    at Socket.emit (events.js:127:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:590:20)- /admin/camera/create - POST - ::1
+2018-05-19T14:39:25.797Z - info: ::1 - - [19/May/2018:14:39:25 +0000] "POST /admin/camera/create HTTP/1.1" 500 1087 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:42:48.885Z - error: 500 - Data truncated for column 'status' at row 1 -SequelizeDatabaseError: Data truncated for column 'status' at row 1
+    at Query.formatError (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:89:29)
+    at Socket.emit (events.js:127:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:590:20)- /admin/camera/create - POST - ::1
+2018-05-19T14:42:48.891Z - info: ::1 - - [19/May/2018:14:42:48 +0000] "POST /admin/camera/create HTTP/1.1" 500 1087 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:43:02.382Z - error: 500 - Constant is not defined -ReferenceError: Constant is not defined
+    at models.Camera.create.then.rs (D:\Workspace\Nodejs\GIT\CameraApp\api\service\camera\camera.service.js:10:25)
+    at tryCatcher (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:757:18)
+    at tryOnImmediate (timers.js:718:5)
+    at processImmediate [as _immediateCallback] (timers.js:698:5)- /admin/camera/create - POST - ::1
+2018-05-19T14:43:02.384Z - info: ::1 - - [19/May/2018:14:43:02 +0000] "POST /admin/camera/create HTTP/1.1" 500 12 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:43:37.635Z - error: 500 - Unknown column 'NaN' in 'field list' -SequelizeDatabaseError: Unknown column 'NaN' in 'field list'
+    at Query.formatError (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\sequelize\lib\dialects\mysql\query.js:247:16)
+    at Query.handler [as onResult] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\sequelize\lib\dialects\mysql\query.js:68:23)
+    at Query.Command.execute (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\commands\command.js:30:12)
+    at Connection.handlePacket (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:502:28)
+    at PacketParser.onPacket (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:81:16)
+    at PacketParser.executeStart (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\packet_parser.js:77:14)
+    at Socket.<anonymous> (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\mysql2\lib\connection.js:89:29)
+    at Socket.emit (events.js:127:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:590:20)- /admin/camera/create - POST - ::1
+2018-05-19T14:43:37.641Z - info: ::1 - - [19/May/2018:14:43:37 +0000] "POST /admin/camera/create HTTP/1.1" 500 573 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:44:22.944Z - info: ::1 - - [19/May/2018:14:44:22 +0000] "POST /admin/camera/create HTTP/1.1" 200 283 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:44:59.430Z - error: 400 - validation error -undefined- /admin/camera/create - POST - ::1
+2018-05-19T14:44:59.436Z - info: ::1 - - [19/May/2018:14:44:59 +0000] "POST /admin/camera/create HTTP/1.1" 400 51 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:45:15.807Z - info: ::1 - - [19/May/2018:14:45:15 +0000] "POST /admin/camera/create HTTP/1.1" 200 281 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:45:59.681Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /test/5251c?color=red - GET - ::1
+2018-05-19T14:45:59.683Z - info: ::1 - - [19/May/2018:14:45:59 +0000] "GET /test/5251c?color=red HTTP/1.1" 404 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:45:59.995Z - error: 404 - Not Found -Error: Not Found
+    at D:\Workspace\Nodejs\GIT\CameraApp\app.js:57:13
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at D:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /test/5251c?color=red&color=blue - GET - ::1
+2018-05-19T14:45:59.997Z - info: ::1 - - [19/May/2018:14:45:59 +0000] "GET /test/5251c?color=red&color=blue HTTP/1.1" 404 24 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:47:02.262Z - error: 400 - validation error -undefined- /admin/camera/create - POST - ::1
+2018-05-19T14:47:02.267Z - info: ::1 - - [19/May/2018:14:47:02 +0000] "POST /admin/camera/create HTTP/1.1" 400 73 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:47:54.549Z - error: 400 - validation error -undefined- /admin/camera/create - POST - ::1
+2018-05-19T14:47:54.555Z - info: ::1 - - [19/May/2018:14:47:54 +0000] "POST /admin/camera/create HTTP/1.1" 400 73 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+
+2018-05-19T14:48:00.036Z - info: ::1 - - [19/May/2018:14:48:00 +0000] "POST /admin/camera/create HTTP/1.1" 200 283 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36"
+

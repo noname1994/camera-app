@@ -1,0 +1,59 @@
+2018-06-17T15:20:45.594Z - info: ::1 - - [17/Jun/2018:15:20:45 +0000] "GET / HTTP/1.1" 200 677 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:20:45.620Z - info: ::1 - - [17/Jun/2018:15:20:45 +0000] "GET /polyfills.9e2eb304be641132ecfe.bundle.js HTTP/1.1" 200 59684 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:20:45.624Z - info: ::1 - - [17/Jun/2018:15:20:45 +0000] "GET /scripts.e2cc764d74d6cb8d1c42.bundle.js HTTP/1.1" 200 123030 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:20:45.630Z - info: ::1 - - [17/Jun/2018:15:20:45 +0000] "GET /inline.318b50c57b4eba3d437b.bundle.js HTTP/1.1" 200 796 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:20:45.637Z - info: ::1 - - [17/Jun/2018:15:20:45 +0000] "GET /main.6fdbef6b020e21b554e2.bundle.js HTTP/1.1" 200 514317 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:20:45.640Z - info: ::1 - - [17/Jun/2018:15:20:45 +0000] "GET /styles.1b485c984366b5499da2.bundle.css HTTP/1.1" 200 127721 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:20:47.343Z - info: ::1 - - [17/Jun/2018:15:20:47 +0000] "GET /favicon.ico HTTP/1.1" 200 5430 "http://localhost:8080/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:42:38.326Z - info: ::1 - - [17/Jun/2018:15:42:38 +0000] "PUT /admin/product/update HTTP/1.1" - - "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:43:43.775Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-17T15:43:43.777Z - info: ::1 - - [17/Jun/2018:15:43:43 +0000] "PUT /admin/product/update HTTP/1.1" 400 167 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:44:25.765Z - error: 400 - validation error -undefined- /admin/product/update - PUT - ::1
+2018-06-17T15:44:25.767Z - info: ::1 - - [17/Jun/2018:15:44:25 +0000] "PUT /admin/product/update HTTP/1.1" 400 167 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:44:50.666Z - error: 400 - Unexpected token } in JSON at position 484 -SyntaxError: Unexpected token } in JSON at position 484
+    at JSON.parse (<anonymous>)
+    at parse (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\body-parser\lib\types\json.js:89:19)
+    at d:\Workspace\Nodejs\GIT\CameraApp\node_modules\body-parser\lib\read.js:121:18
+    at invokeCallback (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\raw-body\index.js:224:16)
+    at done (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\raw-body\index.js:213:7)
+    at IncomingMessage.onEnd (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\raw-body\index.js:273:7)
+    at IncomingMessage.emit (events.js:127:13)
+    at endReadableNT (_stream_readable.js:1101:12)
+    at process._tickCallback (internal/process/next_tick.js:152:19)- /admin/product/update - PUT - ::1
+2018-06-17T15:44:50.668Z - info: ::1 - - [17/Jun/2018:15:44:50 +0000] "PUT /admin/product/update HTTP/1.1" 400 676 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:45:48.761Z - info: ::1 - - [17/Jun/2018:15:45:48 +0000] "PUT /admin/product/update HTTP/1.1" 200 34 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:51:53.557Z - error: 500 - Cannot read property 'forEach' of undefined -TypeError: Cannot read property 'forEach' of undefined
+    at product.update.then (d:\Workspace\Nodejs\GIT\CameraApp\api\service\product\product.service.js:39:18)
+    at tryCatcher (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise._settlePromiseFromHandler (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\promise.js:512:31)
+    at Promise._settlePromise (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\promise.js:569:18)
+    at Promise._settlePromise0 (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\promise.js:614:10)
+    at Promise._settlePromises (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\promise.js:693:18)
+    at Async._drainQueue (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\async.js:133:16)
+    at Async._drainQueues (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\async.js:143:10)
+    at Immediate.Async.drainQueues [as _onImmediate] (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bluebird\js\release\async.js:17:14)
+    at runCallback (timers.js:757:18)
+    at tryOnImmediate (timers.js:718:5)
+    at processImmediate [as _immediateCallback] (timers.js:698:5)- /admin/product/update - PUT - ::1
+2018-06-17T15:51:53.568Z - info: ::1 - - [17/Jun/2018:15:51:53 +0000] "PUT /admin/product/update HTTP/1.1" 500 12 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T15:54:34.447Z - info: ::1 - - [17/Jun/2018:15:54:34 +0000] "PUT /admin/product/update HTTP/1.1" 200 34 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T16:05:40.654Z - info: ::1 - - [17/Jun/2018:16:05:40 +0000] "PUT /admin/product/update HTTP/1.1" 200 238 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T16:07:52.444Z - info: ::1 - - [17/Jun/2018:16:07:52 +0000] "PUT /admin/product/update HTTP/1.1" 200 238 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+
+2018-06-17T16:11:25.977Z - info: ::1 - - [17/Jun/2018:16:11:25 +0000] "PUT /admin/product/update HTTP/1.1" 200 238 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36"
+

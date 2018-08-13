@@ -1,0 +1,33 @@
+2018-05-02T17:35:25.313Z - error: 400 - Password is wrong -USER-CONTROLLER: Password is wrong
+    at bcrypt.compare (d:\Workspace\Nodejs\GIT\CameraApp\api\controllers\user\user.controller.js:44:27)
+    at d:\Workspace\Nodejs\GIT\CameraApp\node_modules\bcrypt-nodejs\bCrypt.js:689:3
+    at process._tickCallback (internal/process/next_tick.js:150:11)- /user/login - POST - ::1
+2018-05-02T17:35:25.315Z - info: ::1 - - [02/May/2018:17:35:25 +0000] "POST /user/login HTTP/1.1" 400 44 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-03T15:17:47.946Z - info: ::1 - - [03/May/2018:15:17:47 +0000] "POST /file/upload HTTP/1.1" 200 341 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+
+2018-05-03T16:47:24.574Z - error: 404 - Not Found -Error: Not Found
+    at d:\Workspace\Nodejs\GIT\CameraApp\app.js:88:13
+    at Layer.handle [as handle_request] (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:335:12)
+    at next (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:275:10)
+    at d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:635:15
+    at next (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:260:14)
+    at Function.handle (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:174:3)
+    at router (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:317:13)
+    at d:\Workspace\Nodejs\GIT\CameraApp\node_modules\express\lib\router\index.js:284:7- /admin/product/create - POST - ::1
+2018-05-03T16:47:24.580Z - info: ::1 - - [03/May/2018:16:47:24 +0000] "POST /admin/product/create HTTP/1.1" 404 24 "http://localhost:8080/api-doc/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36"
+

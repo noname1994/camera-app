@@ -1,0 +1,574 @@
+Executing (c657bef1-2e9f-4c70-bc46-4a2af7fde0c6): START TRANSACTION;
+Executing (c657bef1-2e9f-4c70-bc46-4a2af7fde0c6): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:21:55','2018-05-03 17:21:55');
+Executing (c657bef1-2e9f-4c70-bc46-4a2af7fde0c6): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:21:55' WHERE `id` = 12
+Executing (c657bef1-2e9f-4c70-bc46-4a2af7fde0c6): UPDATE `image_upload` SET `priority`=0,`product_id`=12,`updated_at`='2018-05-03 17:21:56' WHERE `id` = 1
+Executing (c657bef1-2e9f-4c70-bc46-4a2af7fde0c6): COMMIT;
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (6c42c4c3-1605-44e8-bc2b-b9748cae2d78): START TRANSACTION;
+Executing (6c42c4c3-1605-44e8-bc2b-b9748cae2d78): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (6c42c4c3-1605-44e8-bc2b-b9748cae2d78): COMMIT;
+Executing (c894ab37-1180-48e1-9056-09ca1eb37c8c): START TRANSACTION;
+Executing (c894ab37-1180-48e1-9056-09ca1eb37c8c): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (c894ab37-1180-48e1-9056-09ca1eb37c8c): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (31bf3b4c-8958-491a-aff2-bdb001f4bdbb): START TRANSACTION;
+Executing (31bf3b4c-8958-491a-aff2-bdb001f4bdbb): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:22:54','2018-05-03 17:22:54');
+Executing (default): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:22:55' WHERE `id` = 13
+Executing (31bf3b4c-8958-491a-aff2-bdb001f4bdbb): ROLLBACK;
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (c0d39c90-c4b1-4dac-9863-e0d35f447758): START TRANSACTION;
+Executing (c0d39c90-c4b1-4dac-9863-e0d35f447758): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (c0d39c90-c4b1-4dac-9863-e0d35f447758): COMMIT;
+Executing (08c4b085-5153-4faf-91e0-b9372c86fa98): START TRANSACTION;
+Executing (08c4b085-5153-4faf-91e0-b9372c86fa98): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (08c4b085-5153-4faf-91e0-b9372c86fa98): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (4e283943-aff5-4b77-b35b-b9d475ea3107): START TRANSACTION;
+Executing (4e283943-aff5-4b77-b35b-b9d475ea3107): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:24:00','2018-05-03 17:24:00');
+Executing (4e283943-aff5-4b77-b35b-b9d475ea3107): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:24:06' WHERE `id` = 14
+Executing (4e283943-aff5-4b77-b35b-b9d475ea3107): UPDATE `image_upload` SET `priority`=0,`product_id`=14,`updated_at`='2018-05-03 17:24:07' WHERE `id` = 1
+Executing (4e283943-aff5-4b77-b35b-b9d475ea3107): COMMIT;
+Executing (aa2f400b-db15-4edf-8cc3-4d1bd61b8e5d): START TRANSACTION;
+Executing (aa2f400b-db15-4edf-8cc3-4d1bd61b8e5d): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:24:45','2018-05-03 17:24:45');
+Executing (aa2f400b-db15-4edf-8cc3-4d1bd61b8e5d): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:24:45' WHERE `id` = 15
+Executing (aa2f400b-db15-4edf-8cc3-4d1bd61b8e5d): ROLLBACK;
+Executing (73db9fe3-5531-4d72-8fde-ed803c3e9152): START TRANSACTION;
+Executing (73db9fe3-5531-4d72-8fde-ed803c3e9152): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:25:11','2018-05-03 17:25:11');
+Executing (73db9fe3-5531-4d72-8fde-ed803c3e9152): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:25:11' WHERE `id` = 16
+Executing (73db9fe3-5531-4d72-8fde-ed803c3e9152): ROLLBACK;
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (99e973cf-417f-45f0-b22d-4c2a269243ac): START TRANSACTION;
+Executing (99e973cf-417f-45f0-b22d-4c2a269243ac): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (99e973cf-417f-45f0-b22d-4c2a269243ac): COMMIT;
+Executing (cfc587c9-fd07-462e-9e28-c7e39ef57848): START TRANSACTION;
+Executing (cfc587c9-fd07-462e-9e28-c7e39ef57848): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (cfc587c9-fd07-462e-9e28-c7e39ef57848): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (ede15a10-841a-4b79-ba61-6f03acf998e9): START TRANSACTION;
+Executing (ede15a10-841a-4b79-ba61-6f03acf998e9): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:26:02','2018-05-03 17:26:02');
+Executing (default): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:26:03' WHERE `id` = 17
+Executing (ede15a10-841a-4b79-ba61-6f03acf998e9): ROLLBACK;
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (b649e4fa-49d6-4c4f-af80-4a299880922f): START TRANSACTION;
+Executing (b649e4fa-49d6-4c4f-af80-4a299880922f): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (b649e4fa-49d6-4c4f-af80-4a299880922f): COMMIT;
+Executing (1f53fff1-1bc0-43ff-8515-63601d73dc85): START TRANSACTION;
+Executing (1f53fff1-1bc0-43ff-8515-63601d73dc85): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (1f53fff1-1bc0-43ff-8515-63601d73dc85): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (e97271d7-7233-406d-bbd2-4779aeb0808f): START TRANSACTION;
+Executing (e97271d7-7233-406d-bbd2-4779aeb0808f): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:27:15','2018-05-03 17:27:15');
+Executing (default): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:27:17' WHERE `id` = 18
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (daf876de-8866-4a6b-9317-71d5518d62c2): START TRANSACTION;
+Executing (daf876de-8866-4a6b-9317-71d5518d62c2): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (daf876de-8866-4a6b-9317-71d5518d62c2): COMMIT;
+Executing (ec317f90-70c1-4cd9-9d3e-6aee6e1f7f96): START TRANSACTION;
+Executing (ec317f90-70c1-4cd9-9d3e-6aee6e1f7f96): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (ec317f90-70c1-4cd9-9d3e-6aee6e1f7f96): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (55317577-4299-485e-8f39-2ea2acb839d4): START TRANSACTION;
+Executing (55317577-4299-485e-8f39-2ea2acb839d4): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:27:50','2018-05-03 17:27:50');
+Executing (default): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:27:51' WHERE `id` = 19
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (5e98f663-1967-42aa-b7e2-f0032865ffd2): START TRANSACTION;
+Executing (5e98f663-1967-42aa-b7e2-f0032865ffd2): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (5e98f663-1967-42aa-b7e2-f0032865ffd2): COMMIT;
+Executing (c9a89116-8524-4b79-a809-7d9034f70caf): START TRANSACTION;
+Executing (c9a89116-8524-4b79-a809-7d9034f70caf): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (c9a89116-8524-4b79-a809-7d9034f70caf): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (c9489d40-fcd3-4fae-998c-ee6a49850563): START TRANSACTION;
+Executing (c9489d40-fcd3-4fae-998c-ee6a49850563): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:28:27','2018-05-03 17:28:27');
+Executing (c9489d40-fcd3-4fae-998c-ee6a49850563): UPDATE `product` SET `type_id`=2,`updated_at`='2018-05-03 17:28:28' WHERE `id` = 20
+Executing (c9489d40-fcd3-4fae-998c-ee6a49850563): UPDATE `image_upload` SET `priority`=0,`product_id`=20,`updated_at`='2018-05-03 17:28:28' WHERE `id` = 2
+Executing (c9489d40-fcd3-4fae-998c-ee6a49850563): COMMIT;
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (1546a964-dcb6-409e-99d4-1546bc8d110e): START TRANSACTION;
+Executing (1546a964-dcb6-409e-99d4-1546bc8d110e): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (1546a964-dcb6-409e-99d4-1546bc8d110e): COMMIT;
+Executing (1e0e8691-dcaf-4947-ad69-70ed45278f77): START TRANSACTION;
+Executing (1e0e8691-dcaf-4947-ad69-70ed45278f77): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (1e0e8691-dcaf-4947-ad69-70ed45278f77): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (9027ca71-93bf-4810-84ba-307373962dc4): START TRANSACTION;
+Executing (9027ca71-93bf-4810-84ba-307373962dc4): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`,`type_id`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:30:25','2018-05-03 17:30:25',2);
+Executing (9027ca71-93bf-4810-84ba-307373962dc4): UPDATE `image_upload` SET `priority`=0,`product_id`=21,`updated_at`='2018-05-03 17:30:35' WHERE `id` = 2
+Executing (9027ca71-93bf-4810-84ba-307373962dc4): COMMIT;
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (c3f77ac6-86a7-4511-bdfb-848d868b4daa): START TRANSACTION;
+Executing (c3f77ac6-86a7-4511-bdfb-848d868b4daa): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (c3f77ac6-86a7-4511-bdfb-848d868b4daa): COMMIT;
+Executing (b6937257-6856-4d27-a5f7-2b2614901032): START TRANSACTION;
+Executing (b6937257-6856-4d27-a5f7-2b2614901032): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (b6937257-6856-4d27-a5f7-2b2614901032): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (7692f45d-06f2-4dca-b9f3-e173f88a1014): START TRANSACTION;
+Executing (7692f45d-06f2-4dca-b9f3-e173f88a1014): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`,`type_id`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:33:05','2018-05-03 17:33:05',2);
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (d5dd1811-4a40-4499-9a43-0cc60a89d268): START TRANSACTION;
+Executing (d5dd1811-4a40-4499-9a43-0cc60a89d268): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (d5dd1811-4a40-4499-9a43-0cc60a89d268): COMMIT;
+Executing (4b3acaec-e87c-4d03-b525-86deeaf8f315): START TRANSACTION;
+Executing (4b3acaec-e87c-4d03-b525-86deeaf8f315): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (4b3acaec-e87c-4d03-b525-86deeaf8f315): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (db23204c-3fa9-406e-89f1-f817e86c3156): START TRANSACTION;
+Executing (db23204c-3fa9-406e-89f1-f817e86c3156): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:33:36','2018-05-03 17:33:36');
+Executing (db23204c-3fa9-406e-89f1-f817e86c3156): SELECT `id`, `name` FROM `type` AS `Type` WHERE `Type`.`id` = 2;
+Executing (default): UPDATE `product` SET `type_id`=NULL,`updated_at`='2018-05-03 17:34:04' WHERE `id` = 23
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `uri` VARCHAR(255), `location` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255), `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`camera_id`, `product_id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `role_id` INTEGER , `user_id` INTEGER , PRIMARY KEY (`role_id`, `user_id`), FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (f3e9afb8-48be-4259-9d1f-659e822663e2): START TRANSACTION;
+Executing (f3e9afb8-48be-4259-9d1f-659e822663e2): SELECT `id`, `name` FROM `role` AS `Role` WHERE `Role`.`name` = 'ADMIN' LIMIT 1;
+Executing (f3e9afb8-48be-4259-9d1f-659e822663e2): COMMIT;
+Executing (6fc7bfd5-29aa-4760-a8a3-0f885906ed76): START TRANSACTION;
+Executing (6fc7bfd5-29aa-4760-a8a3-0f885906ed76): SELECT `id`, `email`, `password`, `fullname`, `phone_number`, `address`, `created_at`, `updated_at` FROM `user` AS `User` WHERE `User`.`email` = 'tranducninhnd94@hotmail.com';
+Executing (6fc7bfd5-29aa-4760-a8a3-0f885906ed76): COMMIT;
+Executing (default): SELECT `created_at`, `updated_at`, `role_id`, `user_id` FROM `user_Role` AS `UserRole` WHERE `UserRole`.`user_id` = 1;
+Executing (4b9e7cb1-5f44-4d42-aae4-c1f5c75bbc89): START TRANSACTION;
+Executing (4b9e7cb1-5f44-4d42-aae4-c1f5c75bbc89): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:34:47','2018-05-03 17:34:47');
+Executing (4b9e7cb1-5f44-4d42-aae4-c1f5c75bbc89): SELECT `id`, `name` FROM `type` AS `Type` WHERE `Type`.`id` = 2;
+Executing (4b9e7cb1-5f44-4d42-aae4-c1f5c75bbc89): UPDATE `product` SET `type_id`=NULL,`updated_at`='2018-05-03 17:34:49' WHERE `id` = 24
+Executing (4b9e7cb1-5f44-4d42-aae4-c1f5c75bbc89): UPDATE `image_upload` SET `priority`=0,`product_id`=24,`updated_at`='2018-05-03 17:34:49' WHERE `id` = 2
+Executing (4b9e7cb1-5f44-4d42-aae4-c1f5c75bbc89): COMMIT;
+Executing (6a63a6af-c8da-42bc-97f4-cf38d58a4ca9): START TRANSACTION;
+Executing (6a63a6af-c8da-42bc-97f4-cf38d58a4ca9): INSERT INTO `product` (`id`,`name`,`original_price`,`sale_price`,`description`,`status`,`created_at`,`updated_at`) VALUES (DEFAULT,'Product 1',10000,10000,'string','SHOW','2018-05-03 17:35:23','2018-05-03 17:35:23');
+Executing (6a63a6af-c8da-42bc-97f4-cf38d58a4ca9): SELECT `id`, `name` FROM `type` AS `Type` WHERE `Type`.`id` = 1;
+Executing (6a63a6af-c8da-42bc-97f4-cf38d58a4ca9): UPDATE `product` SET `type_id`=1,`updated_at`='2018-05-03 17:35:34' WHERE `id` = 25
+Executing (6a63a6af-c8da-42bc-97f4-cf38d58a4ca9): UPDATE `image_upload` SET `priority`=0,`product_id`=25,`updated_at`='2018-05-03 17:35:34' WHERE `id` = 2
+Executing (6a63a6af-c8da-42bc-97f4-cf38d58a4ca9): COMMIT;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SELECT `id`, `name`, `namespace`, `resolution`, `fileOutput`, `uri`, `location`, `status`, `description`, `created_at`, `updated_at` FROM `camera` AS `Camera`;
+Executing (default): SET FOREIGN_KEY_CHECKS = 0
+Executing (default): DROP TABLE IF EXISTS `vendor`;
+Executing (default): DROP TABLE IF EXISTS `promotion`;
+Executing (default): DROP TABLE IF EXISTS `user_Role`;
+Executing (default): DROP TABLE IF EXISTS `role_permission`;
+Executing (default): DROP TABLE IF EXISTS `role`;
+Executing (default): DROP TABLE IF EXISTS `permission`;
+Executing (default): DROP TABLE IF EXISTS `product_promotion`;
+Executing (default): DROP TABLE IF EXISTS `product_camera`;
+Executing (default): DROP TABLE IF EXISTS `order_product`;
+Executing (default): DROP TABLE IF EXISTS `order`;
+Executing (default): DROP TABLE IF EXISTS `user`;
+Executing (default): DROP TABLE IF EXISTS `news`;
+Executing (default): DROP TABLE IF EXISTS `ward`;
+Executing (default): DROP TABLE IF EXISTS `district`;
+Executing (default): DROP TABLE IF EXISTS `province`;
+Executing (default): DROP TABLE IF EXISTS `image_upload`;
+Executing (default): DROP TABLE IF EXISTS `video`;
+Executing (default): DROP TABLE IF EXISTS `product`;
+Executing (default): DROP TABLE IF EXISTS `type`;
+Executing (default): DROP TABLE IF EXISTS `camera`;
+Executing (default): DROP TABLE IF EXISTS `camera`;
+Executing (default): CREATE TABLE IF NOT EXISTS `camera` (`id` INTEGER auto_increment , `name` VARCHAR(255) UNIQUE, `namespace` VARCHAR(255) UNIQUE, `resolution` VARCHAR(255), `fileOutput` VARCHAR(255), `uri` VARCHAR(255) UNIQUE, `location` VARCHAR(255), `status` ENUM('ON', 'OFF', 'RETIRED') DEFAULT 'OFF', `description` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `camera`
+Executing (default): DROP TABLE IF EXISTS `type`;
+Executing (default): CREATE TABLE IF NOT EXISTS `type` (`id` INTEGER auto_increment , `name` VARCHAR(255) UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `type`
+Executing (default): DROP TABLE IF EXISTS `product`;
+Executing (default): CREATE TABLE IF NOT EXISTS `product` (`id` INTEGER auto_increment , `name` VARCHAR(255) UNIQUE, `original_price` FLOAT, `sale_price` FLOAT, `description` VARCHAR(255), `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `type_id` INTEGER, `camera_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`type_id`) REFERENCES `type` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product`
+Executing (default): DROP TABLE IF EXISTS `video`;
+Executing (default): CREATE TABLE IF NOT EXISTS `video` (`id` INTEGER auto_increment , `id_video` VARCHAR(255), `url` TEXT, `hosted_by` ENUM('FACEBOOK', 'DRIVER', 'YOUTUBE', 'LOCAL'), `title` VARCHAR(255), `description` TEXT, `started_at` DATETIME, `ended_at` DATETIME, `embedded_link` TEXT, `created_type` ENUM('FREQUENCY', 'BY_PRODUCT'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `camera_id` INTEGER, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`camera_id`) REFERENCES `camera` (`id`) ON DELETE SET NULL ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `video`
+Executing (default): DROP TABLE IF EXISTS `image_upload`;
+Executing (default): CREATE TABLE IF NOT EXISTS `image_upload` (`id` INTEGER auto_increment , `path` VARCHAR(255), `size` VARCHAR(255), `mimetype` VARCHAR(255), `originalname` VARCHAR(255), `encoding` VARCHAR(255), `filename` VARCHAR(255), `priority` TINYINT DEFAULT 0, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `product_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `image_upload`
+Executing (default): DROP TABLE IF EXISTS `province`;
+Executing (default): CREATE TABLE IF NOT EXISTS `province` (`id` INTEGER auto_increment , `name` VARCHAR(255) UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `province`
+Executing (default): DROP TABLE IF EXISTS `district`;
+Executing (default): CREATE TABLE IF NOT EXISTS `district` (`id` INTEGER auto_increment , `name` VARCHAR(255) UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `province_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`province_id`) REFERENCES `province` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `district`
+Executing (default): DROP TABLE IF EXISTS `ward`;
+Executing (default): CREATE TABLE IF NOT EXISTS `ward` (`id` INTEGER auto_increment , `name` VARCHAR(255) UNIQUE, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `disctrict_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`disctrict_id`) REFERENCES `district` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `ward`
+Executing (default): DROP TABLE IF EXISTS `news`;
+Executing (default): CREATE TABLE IF NOT EXISTS `news` (`id` INTEGER auto_increment , `title` VARCHAR(255), `content` TEXT, `status` ENUM('SHOW', 'HIDDEN'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `news`
+Executing (default): DROP TABLE IF EXISTS `user`;
+Executing (default): CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER auto_increment , `email` VARCHAR(255) UNIQUE, `password` VARCHAR(255), `fullname` VARCHAR(255), `phone_number` VARCHAR(255), `address` VARCHAR(255), `fb_address` VARCHAR(255), `zalo_address` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `ward_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`ward_id`) REFERENCES `ward` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user`
+Executing (default): DROP TABLE IF EXISTS `order`;
+Executing (default): CREATE TABLE IF NOT EXISTS `order` (`id` INTEGER auto_increment , `total` INTEGER, `status` ENUM('STATUS1', 'STATUS2'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER, PRIMARY KEY (`id`), FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE SET NULL ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `order`
+Executing (default): DROP TABLE IF EXISTS `order_product`;
+Executing (default): CREATE TABLE IF NOT EXISTS `order_product` (`number` INTEGER, `total_price` INTEGER, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `order_id` INTEGER , `product_id` INTEGER , PRIMARY KEY (`order_id`, `product_id`), FOREIGN KEY (`order_id`) REFERENCES `order` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`product_id`) REFERENCES `product` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `order_product`
+Executing (default): DROP TABLE IF EXISTS `product_camera`;
+Executing (default): CREATE TABLE IF NOT EXISTS `product_camera` (`id` INTEGER NOT NULL auto_increment , `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_camera`
+Executing (default): DROP TABLE IF EXISTS `product_promotion`;
+Executing (default): CREATE TABLE IF NOT EXISTS `product_promotion` (`id` INTEGER NOT NULL auto_increment , `date_start` DATETIME, `date_end` DATETIME, `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `product_promotion`
+Executing (default): DROP TABLE IF EXISTS `permission`;
+Executing (default): CREATE TABLE IF NOT EXISTS `permission` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `permission`
+Executing (default): DROP TABLE IF EXISTS `role`;
+Executing (default): CREATE TABLE IF NOT EXISTS `role` (`id` INTEGER auto_increment , `name` VARCHAR(255), PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role`
+Executing (default): DROP TABLE IF EXISTS `role_permission`;
+Executing (default): CREATE TABLE IF NOT EXISTS `role_permission` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `permission_id` INTEGER , `role_id` INTEGER , PRIMARY KEY (`permission_id`, `role_id`), FOREIGN KEY (`permission_id`) REFERENCES `permission` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `role_permission`
+Executing (default): DROP TABLE IF EXISTS `user_Role`;
+Executing (default): CREATE TABLE IF NOT EXISTS `user_Role` (`created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, `user_id` INTEGER , `role_id` INTEGER , PRIMARY KEY (`user_id`, `role_id`), FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE CASCADE ON UPDATE CASCADE, FOREIGN KEY (`role_id`) REFERENCES `role` (`id`) ON DELETE CASCADE ON UPDATE CASCADE) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `user_Role`
+Executing (default): DROP TABLE IF EXISTS `promotion`;
+Executing (default): CREATE TABLE IF NOT EXISTS `promotion` (`id` INTEGER auto_increment , `name` VARCHAR(255), `status` ENUM('ACTIVE', 'INACTIVE'), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `promotion`
+Executing (default): DROP TABLE IF EXISTS `vendor`;
+Executing (default): CREATE TABLE IF NOT EXISTS `vendor` (`id` INTEGER auto_increment , `name` VARCHAR(255), `created_at` DATETIME NOT NULL, `updated_at` DATETIME NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE utf8_unicode_ci;
+Executing (default): SHOW INDEX FROM `vendor`
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'product 1';
+Executing (dfc11f55-94e5-4968-80c0-7c9672f1412c): START TRANSACTION;
+Executing (dfc11f55-94e5-4968-80c0-7c9672f1412c): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = 1;
+Executing (dfc11f55-94e5-4968-80c0-7c9672f1412c): UPDATE `product` SET `original_price`=20,`sale_price`=30,`description`='string',`updated_at`='2018-06-17 15:42:39' WHERE `id` = 1
+Executing (dfc11f55-94e5-4968-80c0-7c9672f1412c): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'string';
+Executing (66673b8d-3d25-41ea-94fd-e211420deeda): START TRANSACTION;
+Executing (66673b8d-3d25-41ea-94fd-e211420deeda): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = 1;
+Executing (66673b8d-3d25-41ea-94fd-e211420deeda): UPDATE `product` SET `name`='string',`original_price`=10,`sale_price`=20,`description`='string 123',`updated_at`='2018-06-17 15:45:48' WHERE `id` = 1
+Executing (66673b8d-3d25-41ea-94fd-e211420deeda): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'string';
+Executing (1c6e28e6-80fd-45c1-9ae2-e703add64ca1): START TRANSACTION;
+Executing (1c6e28e6-80fd-45c1-9ae2-e703add64ca1): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = 1;
+Executing (1c6e28e6-80fd-45c1-9ae2-e703add64ca1): UPDATE `product` SET `updated_at`='2018-06-17 15:51:53' WHERE `id` = 1
+Executing (1c6e28e6-80fd-45c1-9ae2-e703add64ca1): ROLLBACK;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'string';
+Executing (9d79b88b-d8ca-4471-9e2a-2e0f8354ca98): START TRANSACTION;
+Executing (9d79b88b-d8ca-4471-9e2a-2e0f8354ca98): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = 1;
+Executing (9d79b88b-d8ca-4471-9e2a-2e0f8354ca98): UPDATE `product` SET `updated_at`='2018-06-17 15:54:12' WHERE `id` = 1
+Executing (9d79b88b-d8ca-4471-9e2a-2e0f8354ca98): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (9d79b88b-d8ca-4471-9e2a-2e0f8354ca98): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE `ImageUpload`.`product_id` = 1;
+Executing (9d79b88b-d8ca-4471-9e2a-2e0f8354ca98): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'string';
+Executing (75f12c3d-27e3-4448-b993-4d70b42d85e1): START TRANSACTION;
+Executing (75f12c3d-27e3-4448-b993-4d70b42d85e1): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = 1;
+Executing (75f12c3d-27e3-4448-b993-4d70b42d85e1): UPDATE `product` SET `updated_at`='2018-06-17 16:05:15' WHERE `id` = 1
+Executing (75f12c3d-27e3-4448-b993-4d70b42d85e1): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (75f12c3d-27e3-4448-b993-4d70b42d85e1): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE (`Video`.`id` = 1) LIMIT 1;
+Executing (75f12c3d-27e3-4448-b993-4d70b42d85e1): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE `Video`.`product_id` = 1;
+Executing (75f12c3d-27e3-4448-b993-4d70b42d85e1): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'string';
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): START TRANSACTION;
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = 1;
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): UPDATE `product` SET `updated_at`='2018-06-17 16:06:48' WHERE `id` = 1
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE (`Video`.`id` = 2) LIMIT 1;
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE `Video`.`product_id` = 1;
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): UPDATE `video` SET `product_id`=NULL,`updated_at`='2018-06-17 16:07:52' WHERE `id` IN (1)
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): UPDATE `video` SET `product_id`=1,`updated_at`='2018-06-17 16:07:52' WHERE `id` IN (2)
+Executing (c92b35fa-7da5-4bf3-985c-f24c2366061f): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'string';
+Executing (e7cd8624-d42e-42da-b4e6-983f2cad5b41): START TRANSACTION;
+Executing (e7cd8624-d42e-42da-b4e6-983f2cad5b41): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = 1;
+Executing (e7cd8624-d42e-42da-b4e6-983f2cad5b41): UPDATE `product` SET `updated_at`='2018-06-17 16:11:23' WHERE `id` = 1
+Executing (e7cd8624-d42e-42da-b4e6-983f2cad5b41): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (e7cd8624-d42e-42da-b4e6-983f2cad5b41): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE 0 = 1 LIMIT 1;
+Executing (e7cd8624-d42e-42da-b4e6-983f2cad5b41): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'prod_test';
+Executing (8b41f106-c5a6-46eb-b43b-628d560741d6): START TRANSACTION;
+Executing (8b41f106-c5a6-46eb-b43b-628d560741d6): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = '1';
+Executing (8b41f106-c5a6-46eb-b43b-628d560741d6): UPDATE `product` SET `name`='prod_test',`original_price`=1,`sale_price`=1,`description`='1',`camera_id`='1',`updated_at`='2018-06-19 14:40:41' WHERE `id` = 1
+Executing (8b41f106-c5a6-46eb-b43b-628d560741d6): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (8b41f106-c5a6-46eb-b43b-628d560741d6): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE 0 = 1 LIMIT 1;
+Executing (8b41f106-c5a6-46eb-b43b-628d560741d6): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'prod_test';
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'prod_test';
+Executing (0be9ecbf-90f7-47c6-add2-f450153543b2): START TRANSACTION;
+Executing (e0e9a8a4-dd5d-4311-8918-5942f55bd393): START TRANSACTION;
+Executing (0be9ecbf-90f7-47c6-add2-f450153543b2): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = '1';
+Executing (e0e9a8a4-dd5d-4311-8918-5942f55bd393): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = '1';
+Executing (0be9ecbf-90f7-47c6-add2-f450153543b2): UPDATE `product` SET `camera_id`='1',`updated_at`='2018-06-19 14:41:57' WHERE `id` = 1
+Executing (e0e9a8a4-dd5d-4311-8918-5942f55bd393): UPDATE `product` SET `camera_id`='1',`updated_at`='2018-06-19 14:41:57' WHERE `id` = 1
+Executing (0be9ecbf-90f7-47c6-add2-f450153543b2): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (0be9ecbf-90f7-47c6-add2-f450153543b2): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE 0 = 1 LIMIT 1;
+Executing (0be9ecbf-90f7-47c6-add2-f450153543b2): COMMIT;
+Executing (e0e9a8a4-dd5d-4311-8918-5942f55bd393): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (e0e9a8a4-dd5d-4311-8918-5942f55bd393): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE 0 = 1 LIMIT 1;
+Executing (e0e9a8a4-dd5d-4311-8918-5942f55bd393): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'prod_test';
+Executing (fba9ae63-2da1-4107-b94c-126996d0194a): START TRANSACTION;
+Executing (fba9ae63-2da1-4107-b94c-126996d0194a): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = '1';
+Executing (fba9ae63-2da1-4107-b94c-126996d0194a): UPDATE `product` SET `camera_id`='1',`updated_at`='2018-06-19 14:42:16' WHERE `id` = 1
+Executing (fba9ae63-2da1-4107-b94c-126996d0194a): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (fba9ae63-2da1-4107-b94c-126996d0194a): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE 0 = 1 LIMIT 1;
+Executing (fba9ae63-2da1-4107-b94c-126996d0194a): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'prod_test';
+Executing (5b8edced-7d9c-488e-9427-dddde9bf65ee): START TRANSACTION;
+Executing (5b8edced-7d9c-488e-9427-dddde9bf65ee): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = '1';
+Executing (5b8edced-7d9c-488e-9427-dddde9bf65ee): UPDATE `product` SET `camera_id`='1',`updated_at`='2018-06-19 14:43:39' WHERE `id` = 1
+Executing (5b8edced-7d9c-488e-9427-dddde9bf65ee): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (5b8edced-7d9c-488e-9427-dddde9bf65ee): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE 0 = 1 LIMIT 1;
+Executing (5b8edced-7d9c-488e-9427-dddde9bf65ee): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'prod_test';
+Executing (7b2edc94-1654-4390-aac0-8d8662e5d4d7): START TRANSACTION;
+Executing (7b2edc94-1654-4390-aac0-8d8662e5d4d7): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = '1';
+Executing (7b2edc94-1654-4390-aac0-8d8662e5d4d7): UPDATE `product` SET `camera_id`='1',`updated_at`='2018-06-19 14:45:24' WHERE `id` = 1
+Executing (7b2edc94-1654-4390-aac0-8d8662e5d4d7): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (7b2edc94-1654-4390-aac0-8d8662e5d4d7): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE (`Video`.`id` = 1 OR `Video`.`id` = 2 OR `Video`.`id` = 3 OR `Video`.`id` = 17) LIMIT 1;
+Executing (7b2edc94-1654-4390-aac0-8d8662e5d4d7): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE `Video`.`product_id` = 1;
+Executing (7b2edc94-1654-4390-aac0-8d8662e5d4d7): UPDATE `video` SET `product_id`=1,`updated_at`='2018-06-19 14:45:25' WHERE `id` IN (1)
+Executing (7b2edc94-1654-4390-aac0-8d8662e5d4d7): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'prod_test';
+Executing (0b275ef7-4017-4012-9b88-3338cd72b9c0): START TRANSACTION;
+Executing (0b275ef7-4017-4012-9b88-3338cd72b9c0): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = '1';
+Executing (0b275ef7-4017-4012-9b88-3338cd72b9c0): UPDATE `product` SET `camera_id`='1',`updated_at`='2018-06-19 14:45:54' WHERE `id` = 1
+Executing (0b275ef7-4017-4012-9b88-3338cd72b9c0): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1 LIMIT 1;
+Executing (0b275ef7-4017-4012-9b88-3338cd72b9c0): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE (`Video`.`id` = 1 OR `Video`.`id` = 2 OR `Video`.`id` = 3 OR `Video`.`id` = 17) LIMIT 1;
+Executing (0b275ef7-4017-4012-9b88-3338cd72b9c0): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE `Video`.`product_id` = 1;
+Executing (0b275ef7-4017-4012-9b88-3338cd72b9c0): COMMIT;
+Executing (default): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`name` = 'prod_test';
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): START TRANSACTION;
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): SELECT `id`, `name`, `original_price`, `sale_price`, `description`, `status`, `created_at`, `updated_at`, `type_id`, `camera_id` FROM `product` AS `Product` WHERE `Product`.`id` = '1';
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): UPDATE `product` SET `camera_id`='1',`updated_at`='2018-06-19 14:50:38' WHERE `id` = 1
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE 0 = 1;
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): SELECT `id`, `path`, `size`, `mimetype`, `originalname`, `encoding`, `filename`, `priority`, `created_at`, `updated_at`, `product_id` FROM `image_upload` AS `ImageUpload` WHERE `ImageUpload`.`product_id` = 1;
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE (`Video`.`id` = 1 OR `Video`.`id` = 2 OR `Video`.`id` = 3 OR `Video`.`id` = 17);
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): SELECT `id`, `id_video`, `url`, `hosted_by`, `title`, `description`, `started_at`, `ended_at`, `embedded_link`, `created_type`, `created_at`, `updated_at`, `camera_id`, `product_id` FROM `video` AS `Video` WHERE `Video`.`product_id` = 1;
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): UPDATE `video` SET `product_id`=1,`updated_at`='2018-06-19 14:50:46' WHERE `id` IN (2, 3, 17)
+Executing (5a569319-db76-468f-928f-cd9dc66202ad): COMMIT;
