@@ -28,34 +28,34 @@ class FakeDatabase {
                 .then(() => {
 
                     // note : name, uri, namespace of camera are unique
-                    // db.Camera.bulkCreate(
-                    //     cameras
-                    // ).then(result => {
-                    // }).catch(error => {
-                    //     console.log("error: ", error);
-                    // })
+                    db.Camera.bulkCreate(
+                        cameras
+                    ).then(result => {
+                    }).catch(error => {
+                        console.log("error: ", error);
+                    })
 
-                    // roles.forEach(role => {
-                    //     db.Role.findOrCreate({
-                    //         where: {
-                    //             name: role.name
-                    //         }
-                    //     })
-                    // });
+                    roles.forEach(role => {
+                        db.Role.findOrCreate({
+                            where: {
+                                name: role.name
+                            }
+                        })
+                    });
 
-                    // users.forEach(user => {
-                    //     db.User.findOrCreate({
-                    //         where: {
-                    //             email: user.email
-                    //         },
-                    //         defaults: {
-                    //             password: user.password,
-                    //             fullname: user.fullname,
-                    //             phone_number: user.phone_number,
-                    //             address: user.address
-                    //         }
-                    //     })
-                    // })
+                    users.forEach(user => {
+                        db.User.findOrCreate({
+                            where: {
+                                email: user.email
+                            },
+                            defaults: {
+                                password: user.password,
+                                fullname: user.fullname,
+                                phone_number: user.phone_number,
+                                address: user.address
+                            }
+                        })
+                    })
 
 
                     //     db.Role.findOrCreate({

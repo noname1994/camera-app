@@ -1,0 +1,18 @@
+Trang chủ
+1. Lấy danh sách 4 sản phẩm mới nhất (nổi bật nhất)
+2. Lấy danh sách 3 tin tức mới nhất
+Camera trực tuyến
+	Bình rượu
+	3. Lấy danh sách các camera của bình rượu
+	Chuồng gà
+	4. Lấy danh sách các camera của chuồng gà
+	Xem lại camera
+	5. Lấy danh sách camera, các thông tinn thời gian để lọc
+	6. Lấy danh sách sản phẩm liên quan đến camera đó
+Sản phẩm
+	7. Lấy thông tin chi tiết của sản phẩm
+	8. Lấy danh sách sản phẩm tương tự sản phẩm đó
+Tin tức:
+	9. Lấy tất cả tin tức (sắp xếp và phân trang)
+	10. Lấy 3-4 sản phẩm nổi bật
+	11. Lấy 3-4 tin tức nổi bật

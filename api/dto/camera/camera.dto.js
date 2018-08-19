@@ -8,7 +8,8 @@ module.exports = {
       uri: obj.uri,
       location: obj.location,
       status: obj.status,
-      description: obj.description
+      description: obj.description,
+      type: obj.type
     };
   },
 
@@ -22,7 +23,8 @@ module.exports = {
       uri: obj.uri,
       location: obj.location,
       status: obj.status,
-      description: obj.description
+      description: obj.description,
+      type: obj.type
     };
   },
 
@@ -37,6 +39,7 @@ module.exports = {
       location: obj.location,
       status: obj.status,
       description: obj.description,
+      type: obj.type,
       videos: obj.video,
       created_at: obj.created_at,
       updated_at: obj.created_at

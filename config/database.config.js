@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 module.exports = {
   development: {
-    database: "camera-app-db",
+    database: "orfarm",
     username: "root",
     password: "23101994",
     dialect: "mysql",

@@ -29,6 +29,11 @@ $(function () {
                 "orderable": false
             },
             {
+                "data": "type",
+                "defaultContent": "",
+                "orderable": true
+            },
+            {
                 "data": "created_at",
                 "defaultContent": "",
                 "orderable": true,
@@ -63,6 +68,7 @@ $(function () {
             $("#idCameraDescription").val(data.description);
             $("#idCameraLocation").val(data.location);
             $("#idCameraUrl").val(data.uri);
+            $("#idCameraType").val(data.type);
         }
 
         if (type == 'Delete') {
@@ -110,6 +116,8 @@ $(function () {
                 dataCreate.description = $("#idCameraDescription").val();
                 dataCreate.location = $("#idCameraLocation").val();
                 dataCreate.uri = $("#idCameraUrl").val();
+                dataCreate.type = $("#idCameraType").val();
+
                 $.ajax({
                     type: "POST",
                     url: "/admin/camera/create",
@@ -135,6 +143,7 @@ $(function () {
                 dataCreate.description = $("#idCameraDescription").val();
                 dataCreate.location = $("#idCameraLocation").val();
                 dataCreate.uri = $("#idCameraUrl").val();
+                dataCreate.type = $("#idCameraType").val();
                 $.ajax({
                     type: "PUT",
                     url: "/admin/camera/update",

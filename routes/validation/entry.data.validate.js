@@ -28,7 +28,8 @@ module.exports = {
         uri: Joi.string().required(),
         location: Joi.string().required(),
         status: Joi.string().valid("ON", "OFF", "RETIRED").default("OFF"),
-        description: Joi.string()
+        description: Joi.string(),
+        type: Joi.string().valid("BINH_RUOU", "CHUONG_GA")
       }
     )
   },
@@ -43,7 +44,8 @@ module.exports = {
         uri: Joi.string().required(),
         location: Joi.string().required(),
         status: Joi.string().valid("ON", "OFF", "RETIRED"),
-        description: Joi.string()
+        description: Joi.string(),
+        type: Joi.string().valid("BINH_RUOU", "CHUONG_GA")
       }
     )
   },

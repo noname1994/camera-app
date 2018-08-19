@@ -74,7 +74,7 @@ module.exports = io => {
             camStream.on("data", pipeStream);
 
             ns.on("connection", socket => {
-                console.log("connected to came", arrCams[i].name);
+                console.log("connected to camera", arrCams[i].name);
 
                 var pipeStream1 = data => {
                     // console.log("data1 of", i);

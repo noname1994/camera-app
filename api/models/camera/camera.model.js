@@ -41,7 +41,12 @@ module.exports = (sequelize, DataTypes) => {
       },
       description: {
         type: DataTypes.STRING
-      }
+      },
+      type: {
+        type: DataTypes.ENUM,
+        values: ["BINH_RUOU", "CHUONG_GA"],
+        require: true
+      },
     },
     {
       timestamps: true,

@@ -9,8 +9,8 @@ var debug = require("debug")("cameraapp-server:server");
 var http = require("http");
 var ScheduleService = require("../schedule/schedule");
 
-var scheduleService = new ScheduleService();
-scheduleService.setScheduler();
+// var scheduleService = new ScheduleService();
+// scheduleService.setScheduler();
 
 /**
  * Get port from environment and store in Express.

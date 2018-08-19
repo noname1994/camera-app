@@ -63,6 +63,14 @@
                 <textarea id="idCameraDescription" placeholder="Enter description here.." rows="3" class="form-control"></textarea>
               </div>
               <div class="form-group">
+                <label>Type</label>
+                <select id="idCameraType" class="form-control">
+                  <option value="" selected="">Choose...</option>
+                  <option value="BINH_RUOU">Bình rượu</option>
+                  <option value="CHUONG_GA">Chuồng gà</option>
+                </select>
+              </div>
+              <div class="form-group">
                 <label>URL</label>
                 <input id="idCameraUrl" type="text" placeholder="Example: rtsp://192.168.0.1:8554/cam1" class="form-control">
               </div>
@@ -102,6 +110,14 @@
               <div class="form-group">
                 <label>Description</label>
                 <textarea id="idVideoDescription" placeholder="Enter description here.." rows="3" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Type</label>
+                <select id="idCameraType" class="form-control">
+                  <option value="" selected="">Choose...</option>
+                  <option value="BINH_RUOU">Bình rượu</option>
+                  <option value="CHUONG_GA">Chuồng gà</option>
+                </select>
               </div>
               <div class="row">
                 <div class="col-sm-6">
@@ -297,6 +313,7 @@
                       <th>Namespace</th>
                       <th>URL</th>
                       <th>Location</th>
+                      <th>Type</th>
                       <th>Created at</th>
                       <th>Options</th>
                     </tr>

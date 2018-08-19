@@ -105,11 +105,12 @@ class CameraManagerController {
     let name = req.query.name;
     let uri = req.query.uri;
     let location = req.query.location;
+    let type = req.query.type;
     let pageNum = req.query.pageNum || constant.PAGENUM_DEFAULT;
     let pageSize = req.query.pageSize || constant.PAGESIZE_DEFAULT;
     let limit = pageSize;
     let offset = pageNum * pageSize;
-    let params = { name, uri, location, limit, offset };
+    let params = { name, uri, location, type, limit, offset };
 
     cameraService.findAll(params).then(result => {
       let total = result.count || 0;

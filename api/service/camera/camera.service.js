@@ -54,6 +54,7 @@ class CameraService {
     let name = params.name;
     let uri = params.uri;
     let location = params.location;
+    let type = params.type;
     let limit = params.limit;
     let offset = params.offset;
 
@@ -70,6 +71,11 @@ class CameraService {
     if (uri) {
       conditions.uri = { [Op.eq]: uri };
     }
+
+    if (type) {
+      conditions.type = { [Op.eq]: type };
+    }
+
 
     return models.Camera.findAndCountAll({ where: conditions, limit, offset });
   }
