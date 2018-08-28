@@ -38,7 +38,7 @@
 <body style="overflow: visible;">
 
     <div id="wrapper">
-        
+
 
         <% include ../../partials/header %>
 
@@ -47,136 +47,12 @@
         <div class="container">
             <div class="row">
                 <div id="content" class="col-md-8 col-sm-12 col-xs-12">
-                    <div class="blog-wrapper row">
-                        <div class="col-md-5">
-                            <div class="blog-image">
-                                <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_single_01.jpg" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- end image -->
-                        </div>
-                        <div class="col-md-7">
-                            <div class="blog-title">
-                                <h2><a href="/bai-viet" title="">How to find good garden supplies?</a></h2>
-                                <div class="post-meta">
-                                    <span>
-                                    <i class="fa fa-clock-o"></i>
-                                    <a href="#">33 June 2015</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-comments"></i>
-                                    <a href="#">31 Comments</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-eye"></i>
-                                    <a href="#">441 Views</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-share-alt"></i>
-                                    <a href="#">Share</a>
-                                    </span>
-                                </div>
-                                <div class="block-with-text">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                                    dummy text ever since theown printer took.</div>
-                                <a href="/bai-viet" class="readmore">Read more</a>
-                            </div>
-                            <!-- end desc -->
-                        </div>
-                    </div>
-                    <!-- end blog-wrapper -->
-
-                    <div class="blog-wrapper row">
-                        <div class="col-md-5">
-                            <div class="blog-image">
-                                <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_single_02.jpg" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- end image -->
-                        </div>
-
-                        <div class="col-md-7">
-                            <div class="blog-title">
-                                <h2><a href="/bai-viet" title="">We Build Awesome Garden Parties</a></h2>
-                                <div class="post-meta">
-                                    <span>
-                                    <i class="fa fa-clock-o"></i>
-                                    <a href="#">33 June 2015</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-comments"></i>
-                                    <a href="#">31 Comments</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-eye"></i>
-                                    <a href="#">441 Views</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-share-alt"></i>
-                                    <a href="#">Share</a>
-                                    </span>
-                                </div>
-                                <div class="block-with-text">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy
-                                    text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                                    dummy text ever since theown printer took.</div>
-                                <a href="/bai-viet" class="readmore">Read more</a>
-                            </div>
-                            <!-- end desc -->
-                        </div>
-                    </div>
-                    <!-- end blog-wrapper -->
-
-                    <div class="blog-wrapper row">
-                        <div class="col-md-5">
-                            <div class="blog-image">
-                                <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_single_03.jpg" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- end image -->
-                        </div>
-
-                        <div class="col-md-7">
-                            <div class="blog-title">
-                                <h2><a href="/bai-viet" title="">2015 Pool Designs Now Apply on WS Garden</a></h2>
-                                <div class="post-meta">
-                                    <span>
-                                    <i class="fa fa-clock-o"></i>
-                                    <a href="#">33 June 2015</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-comments"></i>
-                                    <a href="#">31 Comments</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-eye"></i>
-                                    <a href="#">441 Views</a>
-                                    </span>
-                                    <span>
-                                    <i class="fa fa-share-alt"></i>
-                                    <a href="#">Share</a>
-                                    </span>
-                                </div>
-                                <div class="block-with-text">Lorem Ipsum is simply dummy text of the printing and typesetting Lorem Ipsum is simply dummy
-                                    text of the printing and typesetting Lorem Ipsum is simply dummy text of the printing
-                                    and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                                    since theown printer took</div>
-                                <a href="/bai-viet" class="readmore">Read more</a>
-                            </div>
-                            <!-- end desc -->
-                        </div>
-                    </div>
-                    <!-- end blog-wrapper -->
-
-
-
+                    <div id="article-container"></div>
                     <hr class="invis">
 
-                    <nav class="pagi clearfix">
-                        <ul class="pagination">
-                            <li><a href="http://showwp.com/demos/ws-garden/blog.html#">1</a></li>
-                            <li><a href="http://showwp.com/demos/ws-garden/blog.html#">2</a></li>
-                            <li><a href="http://showwp.com/demos/ws-garden/blog.html#">3</a></li>
-                            <li><a href="http://showwp.com/demos/ws-garden/blog.html#">4</a></li>
-                            <li><a href="http://showwp.com/demos/ws-garden/blog.html#">5</a></li>
-                        </ul>
-                    </nav>
+                    <div class="pagination-holder black clearfix">
+                        <ul id="pagination" class="pagination"></ul>
+                    </div>
                 </div>
                 <!-- end content -->
 
@@ -190,30 +66,8 @@
                         <!-- end title -->
 
                         <div class="recent-post-widget">
-                            <ul class="recent-posts">
-                                <li>
-                                    <p>
-                                        <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_01.jpg" alt="" class="alignleft">How to find
-                                            best garden party?
-                                        </a>
-                                    </p>
-                                    <span>12 May 2014</span>
-                                </li>
-                                <li>
-                                    <p>
-                                        <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_02.jpg" alt="" class="alignleft">What About
-                                            Your New Website?
-                                        </a>
-                                    </p>
-                                    <span>06 May 2014</span>
-                                </li>
-                                <li>
-                                    <p>
-                                        <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_03.jpg" alt="" class="alignleft">We Will Help
-                                            You About Your Pool Health</a>
-                                    </p>
-                                    <span>06 May 2014</span>
-                                </li>
+                            <ul class="recent-posts" id="recent-article-container">
+
                             </ul>
                             <!-- end latest-tweet -->
                         </div>
@@ -229,30 +83,8 @@
                         <!-- end title -->
 
                         <div class="recent-post-widget">
-                            <ul class="recent-posts">
-                                <li>
-                                    <p>
-                                        <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_01.jpg" alt="" class="alignleft">How to find
-                                            best garden party?
-                                        </a>
-                                    </p>
-                                    <span>12 May 2014</span>
-                                </li>
-                                <li>
-                                    <p>
-                                        <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_02.jpg" alt="" class="alignleft">What About
-                                            Your New Website?
-                                        </a>
-                                    </p>
-                                    <span>06 May 2014</span>
-                                </li>
-                                <li>
-                                    <p>
-                                        <a href="/bai-viet" title=""><img src="/static/images/tin-tuc/blog_03.jpg" alt="" class="alignleft">We Will Help
-                                            You About Your Pool Health</a>
-                                    </p>
-                                    <span>06 May 2014</span>
-                                </li>
+                            <ul class="recent-posts" id="recent-product-container">
+
                             </ul>
                             <!-- end latest-tweet -->
                         </div>
@@ -268,58 +100,56 @@
     </section>
     <!-- end section -->
     <% include ../../partials/footer %>
-    <style>
-        /* styles for '...' */
-        
-        .block-with-text {
-            /* hide text if it more than N lines  */
-            overflow: hidden;
-            /* for set '...' in absolute position */
-            position: relative;
-            /* use this value to count block height */
-            line-height: 1.2em;
-            /* max-height = line-height (1.2) * lines max number (3) */
-            max-height: 3.6em;
-            /* fix problem when last visible word doesn't adjoin right side  */
-            text-align: justify;
-            /* place for '...' */
-            margin-right: -1em;
-            padding-right: 1em;
-        }
-        /* create the ... */
-        
-        .block-with-text:before {
-            /* points in the end */
-            content: '...';
-            /* absolute position */
-            position: absolute;
-            /* set position to right bottom corner of block */
-            right: 0;
-            bottom: 0;
-        }
-        /* hide ... if we have text, which is less than or equal to max lines */
-        
-        .block-with-text:after {
-            /* points in the end */
-            content: '';
-            /* absolute position */
-            position: absolute;
-            /* set position to right bottom corner of text */
-            right: 0;
-            /* set width and height */
-            width: 1em;
-            height: 1em;
-            margin-top: 0.2em;
-            /* bg color = bg color under block */
-            background: white;
-        }
-    </style>
-
-    <script src="/static/js/san-pham/jquery.min.js"></script>
-    <script src="/static/js/san-pham/owl.carousel.min.js"></script>
-    <script src="/static/js/san-pham/detail.min.js"></script>
-    <script src="/static/js/tin-tuc/tin-tuc.js"></script>
-
+        <style>
+            /* styles for '...' */
+            
+            .block-with-text {
+                /* hide text if it more than N lines  */
+                overflow: hidden;
+                /* for set '...' in absolute position */
+                position: relative;
+                /* use this value to count block height */
+                line-height: 1.2em;
+                /* max-height = line-height (1.2) * lines max number (3) */
+                max-height: 3.6em;
+                /* fix problem when last visible word doesn't adjoin right side  */
+                text-align: justify;
+                /* place for '...' */
+                margin-right: -1em;
+                padding-right: 1em;
+            }
+            /* create the ... */
+            
+            .block-with-text:before {
+                /* points in the end */
+                content: '...';
+                /* absolute position */
+                position: absolute;
+                /* set position to right bottom corner of block */
+                right: 0;
+                bottom: 0;
+            }
+            /* hide ... if we have text, which is less than or equal to max lines */
+            
+            .block-with-text:after {
+                /* points in the end */
+                content: '';
+                /* absolute position */
+                position: absolute;
+                /* set position to right bottom corner of text */
+                right: 0;
+                /* set width and height */
+                width: 1em;
+                height: 1em;
+                margin-top: 0.2em;
+                /* bg color = bg color under block */
+                background: white;
+            }
+        </style>
+        <script src="/static/js/san-pham/owl.carousel.min.js"></script>
+        <script src="/static/js/san-pham/detail.min.js"></script>
+        <script src="/static/js/tin-tuc/tin-tuc.js"></script>
+        <script src="/static/js/jquery.simplePagination.js"></script>
 </body>
 
 </html>

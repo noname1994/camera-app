@@ -105,8 +105,8 @@ module.exports = {
       status: Joi.string().valid("HIDDEN", "SHOW").required().default("SHOW"),
       type: Joi.object().allow(null).keys(
         {
-          id: Joi.number().required(),
-          name: Joi.string().required(),
+          id: Joi.number().required()
+          // name: Joi.string().required(),
         }
       ),
       images: Joi.array().items(
@@ -130,7 +130,8 @@ module.exports = {
         })
       ),
       camera_id: Joi.number().required(),
-      description: Joi.string().max(5000).required()
+      description: Joi.string().max(5000),
+      content: Joi.string()
     }
   },
   updateProduct: {
@@ -171,7 +172,8 @@ module.exports = {
           }
         )
       ),
-      description: Joi.string().max(5000)
+      description: Joi.string().max(5000),
+      content: Joi.string()
     }
   },
 
@@ -224,7 +226,7 @@ module.exports = {
       started_at: Joi.date().required(),
       ended_at: Joi.date().required(),
       embedded_link: Joi.string(),
-      created_type: Joi.string().valid("FREQUENCY", "BY_PRODUCT").required(),
+      created_type: Joi.string().valid("FREQUENCY", "BY_PRODUCT", "BY_ADMIN").required(),
     }
   },
 
@@ -313,6 +315,79 @@ module.exports = {
       draw: Joi.number(),
       start: Joi.number().min(0),
       length: Joi.number().min(1)
+    }
+  },
+
+
+  // news
+  createNews: {
+    body: {
+      title: Joi.string().min(3).required(),
+      status: Joi.string().valid("HIDDEN", "SHOW").required().default("SHOW"),
+      images: Joi.array().items(
+        Joi.object().keys({
+          id: Joi.number().required(),
+          path: Joi.string().required(),
+          size: Joi.number(),
+          mimetype: Joi.string().required(),
+          originalname: Joi.string().required(),
+          encoding: Joi.string().required(),
+          filename: Joi.string().required(),
+          priority: Joi.number().default(0),
+          created_at: Joi.date(),
+          updated_at: Joi.date()
+        })
+      ),
+      description: Joi.string().max(5000).required()
+    }
+  },
+  updateNews: {
+     body: {
+      title: Joi.string().min(3).required(),
+      status: Joi.string().valid("HIDDEN", "SHOW").required().default("SHOW"),
+      images: Joi.array().items(
+        Joi.object().keys({
+          id: Joi.number().required(),
+          path: Joi.string().required(),
+          size: Joi.number(),
+          mimetype: Joi.string().required(),
+          originalname: Joi.string().required(),
+          encoding: Joi.string().required(),
+          filename: Joi.string().required(),
+          priority: Joi.number().default(0),
+          created_at: Joi.date(),
+          updated_at: Joi.date()
+        })
+      ),
+      description: Joi.string().max(5000).required()
+    }
+  },
+
+  findAllNews: {
+    query: {
+      status: Joi.string().valid("HIDDEN", "SHOW"),
+      pageNum: Joi.number().min(0),
+      pageSize: Joi.number().min(1)
+    }
+  },
+
+  findAllNewsForDataTable: {
+    query: {
+      draw: Joi.number(),
+      start: Joi.number().min(0),
+      length: Joi.number().min(1)
+    }
+  },
+
+  getDetailNews: {
+    query: {
+      newsId: Joi.number().required()
+    }
+  },
+
+  deleteNews: {
+    query: {
+      arrId: Joi.array().required()
     }
   },
 };

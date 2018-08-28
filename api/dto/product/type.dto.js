@@ -17,8 +17,8 @@ module.exports = {
         return {
             id: obj.id,
             name: obj.name,
-            created_at: obj.create_at,
-            updated_at: obj.update_at
+            created_at: obj.created_at,
+            updated_at: obj.updated_at
         }
     }
 }

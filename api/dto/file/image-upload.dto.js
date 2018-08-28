@@ -1,7 +1,7 @@
 module.exports = {
     infoCreate: (obj) => {
         return {
-            path: obj.path,
+            path: obj.path ? obj.path.substring(6,obj.path.length): undefined,
             size: obj.size,
             mimetype: obj.mimetype,
             originalname: obj.originalname,

@@ -134,8 +134,8 @@ class VideoController {
         let offset = req.query.start || constant.OFFSET_DEFAULT; // default bootstrap start page offset at 0
         let pageSize = req.query.length || constant.PAGESIZE_DEFAULT;
         let limit = pageSize;
-        let created_type = "BY_PRODUCT";
-        let params = {created_type, limit, offset };
+        // let created_type = "BY_PRODUCT";
+        let params = {limit, offset };
     
         videoService.findAll(params).then(result => {
           let total = result.count || 0;

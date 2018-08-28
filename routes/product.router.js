@@ -26,4 +26,5 @@ router
   // type of product
   .post("/admin/type/create", auth.isAdmin, validation(entryDataValidate.creatType), typeManagerController.createType)
   .post("/admin/type/update", auth.isAdmin, validation(entryDataValidate.updateType), typeManagerController.updateType)
+  .get("/admin/type", typeManagerController.findAll)
 module.exports = router;

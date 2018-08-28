@@ -35,7 +35,7 @@
 <body class="hold-transition skin-blue sidebar-mini">
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-dialog modal-dialog-centered"  style="width: 70%;">
 
       <!-- Modal content-->
       <div class="modal-content">
@@ -78,12 +78,18 @@
               <div class="form-group">
                 <label>Type</label>
                 <select id="idProductType" class="form-control">
-                  <option value="" selected>Choose...</option>
+                  <option selected value="0">Choose</option>
                 </select>
               </div>
               <div class="form-group">
                 <label>Description</label>
                 <textarea id="idProductDescription" placeholder="Enter description here.." rows="3" class="form-control"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Content</label>
+                <div id="idProductContent">
+                  <p>Content here</p>
+                </div>
               </div>
               <div class="form-group files" id="files1">
                 <span class="btn btn-default btn-file">
@@ -330,6 +336,22 @@
   <script src="../js/common.js"></script>
 
   <script src="../js/product.js"></script>
+
+
+   <!-- include summernote css/js -->
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('#idProductContent').summernote({
+        height: 250,                 // set editor height
+        minHeight: null,             // set minimum height of editor
+        maxHeight: null,             // set maximum height of editor
+        focus: false                  // set focus to editable area after initializing summernote
+      });
+    });
+  </script>
 </body>
 
 </html>

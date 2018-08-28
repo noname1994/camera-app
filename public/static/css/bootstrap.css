@@ -8149,8 +8149,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > li > a:focus,
 .pagination > li > span:focus {
   color: #ffffff;
-  background-color: #a38671;
-  border-color: #a38671;
+  background-color: #6ab42f;
+  border-color: #6ab42f;
 }
 .pagination > .active > a,
 .pagination > .active > span,
@@ -8160,8 +8160,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #ffffff;
-  background-color: #a38671;
-  border-color: #a38671;
+  background-color: #6ab42f;
+  border-color: #6ab42f;
   cursor: default;
 }
 .pagination > .disabled > span,

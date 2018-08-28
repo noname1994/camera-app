@@ -40,7 +40,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       created_type: {
         type: DataTypes.ENUM,
-        values: ["FREQUENCY", "BY_PRODUCT"],
+        values: ["FREQUENCY", "BY_PRODUCT", "BY_ADMIN"],
         require: true
       }
     },

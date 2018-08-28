@@ -4,11 +4,17 @@ module.exports = {
   development: {
     database: "orfarm",
     username: "root",
-    password: "23101994",
+    password: "123456a@",
     dialect: "mysql",
     operatorsAliases: false,
     options: {
       host: "localhost",
+    // username: "ninh",
+    // password: "12345",
+    // dialect: "mysql",
+    // operatorsAliases: false,
+    // options: {
+    //   host: "107.113.193.92",
       dialect: "mysql",
       port: 3306,
       // logging: console.log,

@@ -10,6 +10,9 @@ module.exports = (sequelize, DataTypes) => {
             title: {
                 type: DataTypes.STRING
             },
+            description: {
+                type: DataTypes.STRING
+            },
             content: {
                 type: DataTypes.TEXT
             },
@@ -25,6 +28,10 @@ module.exports = (sequelize, DataTypes) => {
             tableName: "news"
         }
     );
-
+    News.associate = models => {
+        models.News.hasMany(models.ImageUpload, {
+            as: "images"
+        });
+    };
     return News;
 };

@@ -21,6 +21,8 @@
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="../dist/css/skins/_all-skins.min.css">
 
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -51,6 +53,12 @@
                 <input id="idVideoId" type="text">
               </div>
               <div class="form-group">
+                <label>Camera</label>
+                <select class="form-control" id="idVideoCamera">
+                  <option selected value="0">Choose</option>
+                </select>
+              </div>
+              <div class="form-group">
                 <label>Title</label>
                 <input id="idVideoTitle" type="text" placeholder="Enter title here.." class="form-control">
               </div>
@@ -62,22 +70,34 @@
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label>Start at</label>
-                    <div class="input-group bootstrap-timepicker timepicker">
-                      <input id="idVideoStartAt" type="text" class="form-control input-small" readonly="readonly">
+                    <!--<div class="input-group bootstrap-timepicker timepicker">
+                      <input id="idVideoStartAt" type="text" class="form-control input-small">
                       <span class="input-group-addon">
                         <i class="glyphicon glyphicon-time"></i>
                       </span>
+                    </div>-->
+                    <div class="input-group datepick">
+                      <input type="text" class="form-control" id="idVideoStartAt" required readonly>
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-6">
                   <div class="form-group">
                     <label>End at</label>
-                    <div class="input-group bootstrap-timepicker timepicker">
-                      <input id="idVideoEndAt" type="text" class="form-control input-small" readonly="readonly">
+                    <!--<div class="input-group bootstrap-timepicker timepicker">
+                      <input id="idVideoEndAt" type="text" class="form-control input-small">
                       <span class="input-group-addon">
                         <i class="glyphicon glyphicon-time"></i>
                       </span>
+                    </div>-->
+                    <div class="input-group datepick">
+                      <input type="text" class="form-control" id="idVideoEndAt" required readonly>
+                      <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -240,6 +260,8 @@
                       <h1 class="box-title">Video</h1>
                     </div>
                     <div class="col-xs-1">
+                      <button class="btn btn-info" data-title="Create" data-toggle="modal" data-target="#myModal" id="idCreate">New</span>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -309,6 +331,11 @@
   <script src="../js/common.js"></script>
 
   <script src="../js/video.js"></script>
+
+  <!--for datetime picker-->
+  <script language="javascript" src="https://momentjs.com/downloads/moment.js"></script>
+  <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/js/bootstrap-datetimepicker.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.43/css/bootstrap-datetimepicker.min.css">
 </body>
 
 </html>

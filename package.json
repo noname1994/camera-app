@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "nodemon ./bin/www",
-    "dev": "node ./bin/www "
+    "dev": "node ./bin/www"
   },
   "dependencies": {
     "app-root-path": "^2.0.1",
@@ -32,7 +32,9 @@
     "facebook-api-video-upload": "1.4.0",
     "node-cron": "1.2.1",
     "fluent-ffmpeg": "2.1.2",
-    "dateformat": "^3.0.3"
+    "dateformat": "^3.0.3",
+    "request": "^2.87.0",
+    "sequelize-cli": "^4.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.17.3"

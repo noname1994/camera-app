@@ -72,8 +72,20 @@ class TypeManagerController {
 
     findTypeById(req, res, next) { }
 
-    findAll(req, res, next) {
-
+    async findAll(req, res, next) {
+        let params = req.query || {};
+        try {
+            let result = await typeService.findAll(params);
+            let total = result.total;
+            let arrType = result.rows ? result.rows.map( row => {
+                return TypeDTO.infoResponse(row);
+            }) : [] ;
+            let successResponse = new SuccessResponse(200, "Success", {total : total, arr: arrType });
+            res.status(200);
+            return res.json(successResponse);
+        } catch (error) {
+            next(error);
+        }
     }
 }
 module.exports = TypeManagerController;

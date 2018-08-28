@@ -34,7 +34,7 @@ $(function () {
                 "orderable": true
             },
             {
-                "data": "created_at",
+                "data": "status",
                 "defaultContent": "",
                 "orderable": true,
             },
@@ -42,6 +42,7 @@ $(function () {
                 "data": null,
                 "defaultContent": '' +
                     '<button class="btn btn-info btn-xs" data-title="AddVideo" data-toggle="modal" data-target="#addVideoModal"><span class="glyphicon glyphicon-plus"></span></button>&nbsp' +
+                    '<button class="btn btn-success btn-xs" data-title="Refresh"><span class="glyphicon glyphicon-refresh"></span></button>&nbsp' +
                     '<button class="btn btn-primary btn-xs" data-title="Edit" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"></span></button>&nbsp' +
                     '<button class="btn btn-danger btn-xs" data-title="Delete"><span class="glyphicon glyphicon-trash"></span></button>',
                 "orderable": false,
@@ -84,12 +85,30 @@ $(function () {
                             success: function () {
                                 makeSuccessfulToast("Delete success");
                                 row.remove().draw(false);
+                                sendMessageViaSocket(data.id, "DELETE");
                             },
                             error: function (jqXHR, status, err) {
                                 makeErrorToast("Delete fail");
                             },
                             contentType: "application/json",
                         });
+                    } else {
+                        console.log("No");
+                    }
+                }
+            });
+        }
+
+        if (type == 'Refresh') {
+            bootbox.confirm({
+                size: "small",
+                message: "Are you sure you want to REFRESH camera processing?",
+                callback: function (result) {
+                    if (result == true) {
+                        sendMessageViaSocket(data.id, "REFRESH");
+                        // makeSuccessfulToast("Refresh success");
+                        table.ajax.reload(null, false);
+                        return;
                     } else {
                         console.log("No");
                     }
@@ -154,6 +173,7 @@ $(function () {
                         alert("Success");
                         $('#myModal').modal('hide');
                         table.ajax.reload(null, false); // user paging is not reset on reload
+                        sendMessageViaSocket(data.id, "UPDATE");
                     },
                     error: function () {
                         alert('Error');
@@ -229,3 +249,13 @@ $(function () {
         return false;
     });
 })
+
+
+// socket io
+var socket = io(location.origin + "/admin/camera");
+
+function sendMessageViaSocket(camId, type){
+    // type = UPDATE, DELETE
+    let msg = {id: camId, type: type};
+    socket.emit("message", msg);
+}

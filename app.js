@@ -17,9 +17,9 @@ var swaggerDocument = require("./api/swagger/swagger.json");
 
 var app = express();
 
-const FakeDatabase = require("./db-init");
-const fakeDatabase = new FakeDatabase();
-fakeDatabase.init();
+// const FakeDatabase = require("./db-init");
+// const fakeDatabase = new FakeDatabase();
+// fakeDatabase.init();
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -37,7 +37,7 @@ app.use(morgan('combined', { stream: winston.stream }))
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 // app.use(logger("dev"));
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
@@ -49,12 +49,15 @@ const orderRouter = require("./routes/order.router");
 const userRouter = require("./routes/user.router");
 const fileRouter = require("./routes/file.router");
 const productRouter = require("./routes/product.router");
+const newsRouter = require("./routes/news.router");
+
 app.use(cameraRouter);
 app.use(userRouter);
 app.use(fileRouter);
 app.use(productRouter);
 app.use(videoRouter);
 app.use(orderRouter);
+app.use(newsRouter);
 
 // app.use("/", index);
 
@@ -83,6 +86,9 @@ app.get('/gioi-thieu/', function(req, res) {
 });
 app.get('/lien-he/', function(req, res) {
     res.render('pages/lien-he');
+});
+app.get('/san-pham/', function(req, res) {
+    res.render('pages/san-pham');
 });
 app.get('/san-pham-ga/', function(req, res) {
     res.render('pages/san-pham-ga');

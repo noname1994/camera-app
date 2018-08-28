@@ -23,6 +23,9 @@ module.exports = (sequelize, DataTypes) => {
       description: {
         type: DataTypes.STRING
       },
+      content: {
+          type: DataTypes.TEXT
+      },
       status: {
         type: DataTypes.ENUM,
         values: ["SHOW", "HIDDEN"]

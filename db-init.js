@@ -23,6 +23,8 @@ class FakeDatabase {
 
         let users = obj.users || [];
 
+        let type = obj.type || [];
+
         db.sequelize.query("SET FOREIGN_KEY_CHECKS = 0", { raw: true }).then(function (results) {
             db.sequelize.sync({ force: true })
                 .then(() => {
@@ -57,7 +59,12 @@ class FakeDatabase {
                         })
                     })
 
-
+                    db.Type.bulkCreate(
+                        type
+                    ).then(result => {
+                    }).catch(error => {
+                        console.log("error: ", error);
+                    })
                     //     db.Role.findOrCreate({
                     //         where: {
                     //             name: "ADMIN"

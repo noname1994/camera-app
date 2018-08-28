@@ -32,7 +32,7 @@ $(function () {
                 "orderable": false
             },
             {
-                "data": "type",
+                "data": "type.name",
                 "defaultContent": "",
                 "orderable": true,
             },
@@ -52,7 +52,7 @@ $(function () {
         var row = table.row($(this).parents('tr'));
         var data = row.data();
         var type = event.currentTarget.getAttribute('data-title');
-
+        console.log("data: ", data);
         if (type == 'Edit') {
             $("#idProductId").val(data.id);
             if (data.camera_id) {
@@ -64,6 +64,14 @@ $(function () {
             $("#idProductOriginalPrice").val(data.original_price);
             $("#idProductSalePrice").val(data.sale_price);
             $("#idProductDescription").val(data.description);
+            $('#idProductContent').summernote('code', data.content);
+
+            if (data.type){
+                var type = data.type;
+                $("#idProductType").val(type.id);
+            }else{
+                $("#idProductType").val(0);
+            }
             var output = [];
             listImageToUpload = [];
             $("#idFileList").empty();
@@ -125,13 +133,15 @@ $(function () {
         if (title == 'Create') {
             console.log("open");
             $("#idProductId").val("");
-            $("#idProductCamera").val(0);
+            $("#idProductCamera").val();
             $("#idProductName").val("");
             $("#idProductOriginalPrice").val("");
             $("#idProductSalePrice").val("");
             $("#idProductDescription").val("");
+            $("#idProductContent").summernote('code', '');
+
             // $("#idProductStatus").val("");
-            // $("#idProductType").val("");
+            $("#idProductType").val(0);
             $("#idFileList").empty();
             listImageToUpload = [];
             $('#idProductVideos').empty();
@@ -142,8 +152,11 @@ $(function () {
                 dataCreate.original_price = $("#idProductOriginalPrice").val();
                 dataCreate.sale_price = $("#idProductSalePrice").val();
                 dataCreate.description = $("#idProductDescription").val();
+                dataCreate.content = $('#idProductContent').summernote('code');
                 dataCreate.status = $("#idProductStatus").val();
-                dataCreate.type = $("#idProductType").val() == "" ? null : $("#idProductType").val();
+                let objType = {};
+                objType.id = $("#idProductType").val() == "" ? null : $("#idProductType").val();
+                dataCreate.type = objType;
                 if (listImageToUpload && listImageToUpload.length > 0) {
                     dataCreate.images = listImageToUpload
                 }
@@ -178,8 +191,11 @@ $(function () {
                 dataCreate.original_price = $("#idProductOriginalPrice").val();
                 dataCreate.sale_price = $("#idProductSalePrice").val();
                 dataCreate.description = $("#idProductDescription").val();
+                dataCreate.content = $('#idProductContent').summernote('code');
                 dataCreate.status = $("#idProductStatus").val();
-                dataCreate.type = $("#idProductType").val() == "" ? null : $("#idProductType").val();
+                let objType = {};
+                objType.id = $("#idProductType").val() == "" ? null : $("#idProductType").val();
+                dataCreate.type = objType;
                 if (listImageToUpload && listImageToUpload.length > 0) {
                     dataCreate.images = listImageToUpload
                 }
@@ -263,6 +279,27 @@ $(function () {
         $(this).parent().remove();
         console.log(listImageToUpload.length);
 
+    });
+
+    $.ajax({
+        type: "GET",
+        url: "/admin/type",
+        contentType: "application/json",
+        success: function (response) {
+            if (response.value && response.value.arr) {
+                listType = response.value.arr;
+                listType.forEach(type => {
+                    //preload list camera
+                    $('#idProductType').append($("<option></option>")
+                        .attr("value", type.id)
+                        .text(type.name));
+
+                });
+            }
+        },
+        error: function () {
+            console.log("Can not load list camera")
+        }
     });
 
     $.ajax({

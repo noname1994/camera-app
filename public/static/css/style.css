@@ -1809,15 +1809,15 @@
 	}
 	.pager a,
 	.pagination a {
-		border:0 !important;
+		/*border:0 !important;
 		width: 40px;
 		height: 42px;
 		line-height: 40px;
-		padding:0 !important;
+		padding:0 !important;*/
 		text-align: center;
-		font-size: 15px;
+		/*font-size: 15px;*/
 		font-weight: 600;
-		margin:0 5px 0 0;
+		/*margin:0 5px 0 0;*/
 	}
 	.pager a {
 		border-radius: 0 !important;
@@ -2686,7 +2686,9 @@
 		color:#5aa320 !important;
 	}
 
-	.rating i,
+	.rating i{
+		color:#999999;
+	}
 	span.clients-name,
 	.latest-tweets a,
 	.block-text a small,
@@ -2735,7 +2737,7 @@
 	}
 	.plan .head,
 	.topbar,
-	.pagination a,
+	/*.pagination a,*/
 	.navbar-default .navbar-nav .open .dropdown-menu > li > a,
 	.navbar-default .navbar-nav > .open > a, 
 	.navbar-default .navbar-nav > .open > a:hover, 
@@ -2756,6 +2758,11 @@
 		color:#ffffff !important;
 		background-color: #6ab42f !important;
 	}
+	.pagination a{
+		color:#6ab42f !important;
+		background-color: #ffffff !important;
+	}
+
 
 	.yamm .dropdown.yamm-fw .dropdown-menu,
 	.nav-tabs > li a:hover,

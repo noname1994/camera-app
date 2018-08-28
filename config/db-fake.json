@@ -32,5 +32,16 @@
             "phone_number": "01669709094",
             "address": "Nam Dinh"
         }
+    ],
+    "type": [
+        {
+            "name": "BINH_RUOU"
+        },
+        {
+            "name": "CHUONG_GA"
+        },
+        {
+            "name": "DO_NGAM"
+        }
     ]
 }

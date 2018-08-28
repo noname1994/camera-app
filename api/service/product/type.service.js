@@ -2,6 +2,7 @@ const models = require("../../models/index");
 const sequelize = models.sequelize;
 const Sequelize = models.Sequelize;
 const Op = Sequelize.Op;
+const constants = require("../../common/constants");
 
 class TypeService {
     create(newType) {
@@ -18,15 +19,17 @@ class TypeService {
         return models.Type.findOne({ where: { name: name } });
     }
 
-    findAll(params) {
-
-        let pageNum = params.pageNum;
-        let pageSize = params.pageSize;
-
-        let limit = pageSize;
-        let offset = pageNum * pageSize;
-
-        return models.Type.findAll({ limit, offset });
+    async findAll(params) {
+        try{
+            let pageNum = params.pageNum || constants.PAGENUM_DEFAULT;
+            let pageSize = params.pageSize || constants.PAGESIZE_DEFAULT;
+            let limit = pageSize;
+            let offset = pageNum * pageSize;
+            return await models.Type.findAndCountAll({ limit, offset })|| [] ;
+        }catch(error){
+            throw error;
+        }
+       
     }
 }
 

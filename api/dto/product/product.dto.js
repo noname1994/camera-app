@@ -7,6 +7,7 @@ module.exports = {
             sale_price: obj.sale_price,
             status: obj.status,
             description: obj.description,
+            content: obj.content,
             videos: obj.videos,
             camera_id: obj.camera_id
         }
@@ -20,6 +21,7 @@ module.exports = {
             sale_price: obj.sale_price,
             status: obj.status,
             description: obj.description,
+            content: obj.content,
             videos: obj.videos,
             camera_id: obj.camera_id
         }
@@ -34,11 +36,12 @@ module.exports = {
             sale_price: obj.sale_price,
             status: obj.status,
             description: obj.description,
+            content: obj.content,
             type: obj.type,
             images: obj.images,
             videos: obj.videos,
-            create_at: obj.create_at,
-            update_at: obj.update_at
+            created_at: obj.created_at,
+            updated_at: obj.updated_at
         }
     }
 }

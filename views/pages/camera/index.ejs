@@ -37,356 +37,108 @@
 </head>
 
 <body style="overflow: visible;">
-    <style>
-        .k-mediaplayer {
-            float: left;
-            box-sizing: border-box;
-            width: 70%;
-        }
-        
-        .playlist {
-            float: left;
-            height: 350px;
-            overflow: auto;
-            /*width: 30%;*/
-        }
-        
-        @media(max-width: 768px) {
-            .playlist,
-            .k-mediaplayer {
-                width: 100%;
-            }
-            .playlist {
-                float: left;
-                height: 200px;
-                overflow: auto;
-                /*width: 30%;*/
-            }
-        }
-        
-        @media(max-width: 1024px) {
-            .playlist,
-            .k-mediaplayer {
-                width: 100%;
-            }
-            .playlist {
-                float: left;
-                height: 280px;
-                overflow: auto;
-                /*width: 30%;*/
-            }
-        }
-        
-        .playlist ul,
-        .playlist li {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        
-        .playlist .k-item {
-            border-bottom-style: solid;
-            border-bottom-width: 1px;
-            padding: 14px 15px;
-        }
-        
-        .playlist .k-item:last-child {
-            border-bottom-width: 0;
-        }
-        
-        .playlist span {
-            cursor: pointer;
-            display: block;
-            overflow: hidden;
-            text-decoration: none;
-        }
-        
-        .playlist span img {
-            border: 0 none;
-            display: block;
-            height: 56px;
-            object-fit: cover;
-            width: 100px;
-            float: left;
-        }
-        
-        .playlist h5 {
-            display: block;
-            font-weight: normal;
-            margin: 0;
-            overflow: hidden;
-            padding-left: 10px;
-            text-align: left;
-        }
-    </style>
     <div id="wrapper">
 
         <% include ../../partials/header %>
 
-        <section class="section">
-            <div class="main-content">
-                <div class="content">
-                    <div class="container detail-reorder">
+            <section class="section">
+                <div class="main-content">
+                    <div class="content">
+                        <div class="container detail-reorder">
 
-                        <div class=".row-eq-height m0 mt15 m-15mb">
-                            <!-- Col left - SLider  -->
-                            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 p0 pr10 p0mb ">
-                                <video controls style="max-width: 100%; min-width: 100%">
-                                    <source src="https://drive.google.com/uc?export=download&id=1mKHyr7yB6kAeM2LKeCLruKijelwc-bHh" type='video/webm'/> Your browser does not support HTML5 video.
-                                </video>
-                                <div class="row">
-                                    <div class="col-xs-8">
-                                        <div class="blog-title" style="padding-bottom: 0;">
-                                            <br>
-                                            <br>
-                                            <h3><a href="#" title="">Tên mô tả hoạt động của video</a></h3>
-                                            <div class="post-meta">
-                                                <span><i class="fa fa-clock-o"></i><a href="#">33 June 2015</a></span>
-                                                <span><i class="fa fa-comments"></i><a href="#">31 Comments</a></span>
-                                                <span><i class="fa fa-eye"></i><a href="#">441 Views</a></span>
-                                                <span><i class="fa fa-share-alt"></i><a href="#">Share</a></span>
+                            <div class=".row-eq-height m0 mt15 m-15mb">
+                                <!-- Col left - SLider  -->
+                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 p0 pr10 p0mb ">
+                                    <video controls autoplay id="idVideo" style="max-width: 100%; min-width: 100%">
+                                        <source id="idSourceVideo" src="#" type='video/webm' /> Your browser does not support HTML5 video.
+                                    </video>
+                                    <div class="row">
+                                        <div class="col-xs-8">
+                                            <div class="blog-title" style="padding-bottom: 0;">
+                                                <br>
+                                                <br>
+                                                <h3><a href="#" title="" id="idVideoTitle"></a></h3>
+                                                <div class="post-meta">
+                                                    <span><i class="fa fa-clock-o"></i><a href="#">33 June 2015</a></span>
+                                                    <span><i class="fa fa-comments"></i><a href="#">31 Comments</a></span>
+                                                    <span><i class="fa fa-eye"></i><a href="#">441 Views</a></span>
+                                                    <span><i class="fa fa-share-alt"></i><a href="#">Share</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <div class="pull-right">
+                                                <br>
+                                                <br>
+                                                <a href="/dat-hang-ga" class="btn btn-primary btn-lg">Sản phẩm của hoạt động này</a>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-xs-4">
-                                        <div class="pull-right">
-                                            <br>
-                                            <br>
-                                            <a href="/dat-hang-ga" class="btn btn-primary btn-lg">Sản phẩm của hoạt động này</a>
+
+
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p0 pl20">
+                                    <div class="k-list-container playlist">
+                                        <div id="idNoContent" style="display:none;">Không có thông tin</div>
+
+                                        <ul id="listView" class="k-list k-widget k-listview k-selectable" data-role="listview" role="listbox">
+
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="col-md-12 col-sm-12 col-xs-12">
+                                            <div class="col-md-6 col-sm-6 col-xs-6">
+                                                <a href="#" class="btn btn-primary btn-lg">Button</a>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-sm-6">
+                                                <a href="#" class="btn btn-primary btn-lg">Button1</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-
-                            </div>
-                            <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 p0 pl20">
-                                <div class="k-list-container playlist">
-                                    <ul id="listView" class="k-list k-widget k-listview k-selectable" data-role="listview" role="listbox">
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="867c82c9-a7e9-4195-a107-5b81606d783e" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Telerik Platform - Enterprise Mobility. Unshackled.</h5>
-                                    </span>
-                                        </li>
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="867c82c9-a7e9-4195-a107-5b81606d783e" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Telerik Platform - Enterprise Mobility. Unshackled.</h5>
-                                    </span>
-                                        </li>
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="867c82c9-a7e9-4195-a107-5b81606d783e" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Telerik Platform - Enterprise Mobility. Unshackled.</h5>
-                                    </span>
-                                        </li>
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="867c82c9-a7e9-4195-a107-5b81606d783e" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Telerik Platform - Enterprise Mobility. Unshackled.</h5>
-                                    </span>
-                                        </li>
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="867c82c9-a7e9-4195-a107-5b81606d783e" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Telerik Platform - Enterprise Mobility. Unshackled.</h5>
-                                    </span>
-                                        </li>
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="23952d40-c05d-46f1-b87e-c72f2a0b4d3b" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Learn How York Solved Its Database Problem</h5>
-                                    </span>
-                                        </li>
-
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="378a7850-51c0-4c7d-86b2-0ea2e33cb2d2" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Responsive Website Delivers for Reeves Import Motorcars</h5>
-                                    </span>
-                                        </li>
-
-                                        <li class="k-item k-state-default k-state-selected" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="7897fe0f-f550-4d5d-a333-ffcf175072c2" role="option" aria-selected="true">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Digital Transformation: A New Way of Thinking</h5>
-                                    </span>
-                                        </li>
-
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="30c68b94-fffa-4493-9948-7b70ec702c18" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Take a Tour of the Telerik Platform</h5>
-                                    </span>
-                                        </li>
-
-                                        <li class="k-item k-state-default" onmouseover="$(this).addClass('k-state-hover')" onmouseout="$(this).removeClass('k-state-hover')"
-                                            data-uid="8aee313d-4077-437b-9db0-60de0f65e0a8" role="option" aria-selected="false">
-                                            <span>
-                                        <img src="/static/images/san-pham/1.jpg">
-                                        <h5>Why Telerik Analytics - Key Benefits For Your Applications</h5>
-                                    </span>
-                                        </li>
-                                    </ul>
+                                <div class="container">
+                                    <hr>
                                 </div>
-                                <div>
-                                    <div class="col-md-12 col-sm-12 col-xs-12">
-                                        <div class="col-md-6 col-sm-6 col-xs-6">
-                                            <a href="#" class="btn btn-primary btn-lg">Button</a>
-                                        </div>
-                                        <div class="col-md-6 col-sm-6 col-sm-6">
-                                            <a href="#" class="btn btn-primary btn-lg">Button1</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="container">
-                                <hr>
                             </div>
-
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-       
-        <section class="section white">
-            <div class="container">
-                <div class="shop-top row clearfix">
-                    <div class="title-area pull-left">
-                        <h3>Related product</h3>
-                    </div>
-                </div>
-                <!-- end shop top -->
+            </section>
 
-                <div class="row">
-                    <div id="content" class="col-md-12 col-sm-12 col-xs-12">
-                        <div class="blog-wrapper">
-                            <div class="row module-wrapper shop-layout text-center">
-                                <div class="col-md-3 col-sm-3 shop-item">
-                                    <div class="entry">
-                                        <img class="img-responsive" src="/static/images/san-pham/shop_01.jpg" alt="">
-                                        <div class="magnifier">
-                                            <div class="buttons">
-                                                <a class="st" rel="bookmark" href="http://showwp.com/demos/ws-garden/shop-checkout.html"><span class="fa fa-shopping-cart"></span></a>
-                                                <a class="st" rel="bookmark" href="http://showwp.com/demos/ws-garden/shop-single.html"><span class="fa fa-link"></span></a>
-                                            </div>
-                                        </div>
-                                        <!-- end magnifier -->
-                                    </div>
-                                    <!-- end entry -->
-                                    <h4><a href="http://showwp.com/demos/ws-garden/shop-single.html">Green Shovel </a></h4>
-                                    <small>$21.00</small>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <span>(12)</span>
-                                    </div>
+            <section class="section white">
+                <div class="container">
+                    <div class="shop-top row clearfix">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="title-area pull-left">
+                                    <h3>Sản phẩm liên quan</h3>
                                 </div>
-                                <!-- end shop_item -->
-
-                                <div class="col-md-3 col-sm-3 shop-item">
-                                    <div class="entry">
-                                        <img class="img-responsive" src="/static/images/san-pham/shop_02.jpg" alt="">
-                                        <div class="magnifier">
-                                            <div class="buttons">
-                                                <a class="st" rel="bookmark" href="http://showwp.com/demos/ws-garden/shop-checkout.html"><span class="fa fa-shopping-cart"></span></a>
-                                                <a class="st" rel="bookmark" href="http://showwp.com/demos/ws-garden/shop-single.html"><span class="fa fa-link"></span></a>
-                                            </div>
-                                        </div>
-                                        <!-- end magnifier -->
-                                    </div>
-                                    <!-- end entry -->
-                                    <h4><a href="http://showwp.com/demos/ws-garden/shop-single.html">Water Filling Cans</a></h4>
-                                    <small>$21.00</small>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <span>(3)</span>
-                                    </div>
-                                </div>
-                                <!-- end shop_item -->
-
-                                <div class="col-md-3 col-sm-3 shop-item">
-                                    <div class="entry">
-                                        <img class="img-responsive" src="/static/images/san-pham/shop_03.jpg" alt="">
-                                        <div class="magnifier">
-                                            <div class="buttons">
-                                                <a class="st" rel="bookmark" href="http://showwp.com/demos/ws-garden/shop-checkout.html"><span class="fa fa-shopping-cart"></span></a>
-                                                <a class="st" rel="bookmark" href="http://showwp.com/demos/ws-garden/shop-single.html"><span class="fa fa-link"></span></a>
-                                            </div>
-                                        </div>
-                                        <!-- end magnifier -->
-                                    </div>
-                                    <!-- end entry -->
-                                    <h4><a href="http://showwp.com/demos/ws-garden/shop-single.html">Custom Yellow Pot</a></h4>
-                                    <small>$21.00</small>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <span>(6)</span>
-                                    </div>
-                                </div>
-                                <!-- end shop_item -->
-
-                                <div class="ccol-md-3 col-sm-3 shop-item">
-                                    <div class="entry">
-                                        <img class="img-responsive" src="/static/images/san-pham/shop_04.jpg" alt="">
-                                        <div class="magnifier">
-                                            <div class="buttons">
-                                                <a class="st" rel="bookmark" href="http://showwp.com/demos/ws-garden/shop-checkout.html"><span class="fa fa-shopping-cart"></span></a>
-                                                <a class="st" rel="bookmark" href="http://showwp.com/demos/ws-garden/shop-single.html"><span class="fa fa-link"></span></a>
-                                            </div>
-                                        </div>
-                                        <!-- end magnifier -->
-                                    </div>
-                                    <!-- end entry -->
-                                    <h4><a href="http://showwp.com/demos/ws-garden/shop-single.html">Dual-Batch Compost Tumbler </a></h4>
-                                    <small>$21.00</small>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <span>(22)</span>
-                                    </div>
-                                </div>
-                                <!-- end shop_item -->
                             </div>
-                            <!-- end row -->
                         </div>
-                        <!-- end blog-wrapper -->
-
                     </div>
-                    <!-- end content -->
-                </div>
-                <!-- end row -->
-            </div>
-            <!-- end container -->
-        </section>
-        <!-- end section -->
+                    <!-- end shop top -->
 
-        <% include ../../partials/footer %>
+                    <div class="row">
+                        <div id="content" class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="blog-wrapper">
+                                <div class="row module-wrapper shop-layout text-center" id="product-container">
+                                </div>
+                                <!-- end row -->
+                            </div>
+                            <!-- end blog-wrapper -->
+
+                        </div>
+                        <!-- end content -->
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </section>
+            <!-- end section -->
+
+            <% include ../../partials/footer %>
 
     </div>
     <!-- end wrapper -->

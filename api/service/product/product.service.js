@@ -156,8 +156,8 @@ class ProductService {
           },
           {
             model: models.Type,
-            as: "type"
-            // where: conditionOfType =>> can not get list product
+            as: "type",
+            where: conditionOfType 
           }
         ]
       }

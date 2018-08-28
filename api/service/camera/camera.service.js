@@ -20,6 +20,14 @@ class CameraService {
     })
   }
 
+  updateStatus(cameraId, status) {
+        return models.Camera.update({ status }, { where: { id: cameraId } });
+  }
+
+  updateAllCameraStatus(status) {
+        return models.Camera.update({ status });
+  }
+
   delete(cameraId) {
     return models.Camera.destroy({ where: { id: cameraId } });
   }
